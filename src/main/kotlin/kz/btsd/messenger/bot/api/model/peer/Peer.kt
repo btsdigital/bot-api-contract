@@ -69,5 +69,7 @@ data class PeerGroup(
 data class PeerChannel(
     override val id: String,
     @get:JsonInclude(JsonInclude.Include.NON_NULL)
-    val name: String? = null
+    val name: String? = null,
+    @get:JsonInclude(JsonInclude.Include.NON_NULL)
+    val username: String? = null
 ) : Peer(Type.CHANNEL, id)
