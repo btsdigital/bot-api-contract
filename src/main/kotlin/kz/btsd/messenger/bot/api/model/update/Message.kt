@@ -14,5 +14,9 @@ data class Message(
     val dialog: Peer,
     val content: String,
     val forwardMetadata: MessageForwardMetadata? = null,
-    val media: List<Media> = emptyList()
+    val media: List<Media> = emptyList(),
+    val likeCount: Long? = null,
+    val repostCount: Long? = null,
+    val viewCount: Long? = null,
+    val channelPostAuthor: Peer? = null
 ) : Update(updateId, "Message")
