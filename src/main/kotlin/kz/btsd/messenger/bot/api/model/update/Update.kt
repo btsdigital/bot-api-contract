@@ -18,7 +18,8 @@ import io.swagger.annotations.ApiModel
     InvitedToChannel::class,
     ChannelPermissionsGranted::class,
     ChannelPermissionsRevoked::class,
-    KickedFromChannel::class
+    KickedFromChannel::class,
+    ChannelAdminAdded::class
 ])
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.EXISTING_PROPERTY, property = "type", visible = true)
 @JsonSubTypes(value = [
@@ -35,7 +36,8 @@ import io.swagger.annotations.ApiModel
     JsonSubTypes.Type(value = InvitedToChannel::class, name = "InvitedToChannel"),
     JsonSubTypes.Type(value = ChannelPermissionsGranted::class, name = "ChannelPermissionsGranted"),
     JsonSubTypes.Type(value = ChannelPermissionsRevoked::class, name = "ChannelPermissionsRevoked"),
-    JsonSubTypes.Type(value = KickedFromChannel::class, name = "KickedFromChannel")
+    JsonSubTypes.Type(value = KickedFromChannel::class, name = "KickedFromChannel"),
+    JsonSubTypes.Type(value = ChannelAdminAdded::class, name = "ChannelAdminAdded")
 ])
 abstract class Update(
     open val updateId: String,
