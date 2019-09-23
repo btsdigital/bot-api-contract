@@ -45,7 +45,7 @@ internal fun invalidEditMessage() =
     validEditMessage().copy(messageId = "id") to TimeUuid::class
 
 internal fun validInlineCommandTable() = List(MAX_INLINE_CMD_ROWS) { List(MAX_INLINE_CMD_ROW_SIZE) { validInlineCommand() } }
-internal fun validInlineCommands() = List(25) { validInlineCommand() }
+internal fun validInlineCommands() = List(8) { validInlineCommand() }
 
 internal fun validEditMessage() = EditMessage(
     messageId = timeUuid(),
