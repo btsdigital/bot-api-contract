@@ -17,8 +17,8 @@ annotation class InlineCommandTableSize(
     val payload: Array<KClass<out Any>> = []
 )
 
-const val MAX_INLINE_CMD_ROWS = 25
-const val MAX_INLINE_CMD_ROW_SIZE = 10
+const val MAX_INLINE_CMD_ROWS = 8
+const val MAX_INLINE_CMD_ROW_SIZE = 8
 
 class InlineCommandTableValidator : ConstraintValidator<InlineCommandTableSize, List<List<InlineCommand>>> {
     override fun isValid(value: List<List<InlineCommand>>?, context: ConstraintValidatorContext?): Boolean {

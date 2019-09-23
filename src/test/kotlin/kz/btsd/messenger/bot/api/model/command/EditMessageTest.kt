@@ -47,21 +47,21 @@ internal class EditMessageTest : ValidatorTest() {
     }
 
     @Test
-    fun `max size of inline commands is 25`() {
+    fun `max size of inline commands is 8`() {
         message().copy(
-            inlineCommands = List(26) { validInlineCommand() }
+            inlineCommands = List(9) { validInlineCommand() }
         ).violates(InlineCommandsSize::class)
     }
 
     @Test
-    fun `max number of inline rows is 25`() {
-        val rows = List(26) { listOf(validInlineCommand()) }
+    fun `max number of inline rows is 8`() {
+        val rows = List(9) { listOf(validInlineCommand()) }
         message().copy(inlineCommandRows = rows).violates(InlineCommandTableSize::class)
     }
 
     @Test
-    fun `max size of inline rows is 10`() {
-        val rows = listOf(List(11) { validInlineCommand() })
+    fun `max size of inline row is 8`() {
+        val rows = listOf(List(9) { validInlineCommand() })
         message().copy(inlineCommandRows = rows).violates(InlineCommandTableSize::class)
     }
 
@@ -82,7 +82,7 @@ internal class EditMessageTest : ValidatorTest() {
     @Test
     fun `valid message`() {
         message().copy(
-            inlineCommands = List(25) { validInlineCommand() },
+            inlineCommands = List(8) { validInlineCommand() },
             content = 'c'.duplicate(4096),
             mediaList = List(100) { validInputMedia() }
         ).noViolations()
