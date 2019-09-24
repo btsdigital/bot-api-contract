@@ -35,9 +35,5 @@ data class UiState(
     val quickButtonCommands: List<QuickButtonCommand>? = null,
 
     @ApiModelProperty(notes = "Form message contains JSON that defines markup of UI form")
-    val formMessage: FormMessage = FormMessage(),
-
-    @ApiModelProperty(notes = "Form message contains JSON that defines markup of UI view")
-    val interfaceView: InterfaceView = InterfaceView()
-
+    val formMessage: FormMessage = FormMessage()
 )
