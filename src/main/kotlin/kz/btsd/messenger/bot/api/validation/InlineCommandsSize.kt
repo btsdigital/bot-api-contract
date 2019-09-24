@@ -12,7 +12,7 @@ import kotlin.reflect.KClass
 @Target(AnnotationTarget.PROPERTY_GETTER)
 annotation class InlineCommandsSize(
     val attributeName: String = "inlineCommands",
-    val message: String = "Number of {attributeName} must me <= 8, recommended number is 3",
+    val message: String = "Number of {attributeName} should be <= 8, recommended number is 3",
     val groups: Array<KClass<out Any>> = [],
     val payload: Array<KClass<out Any>> = []
 )
