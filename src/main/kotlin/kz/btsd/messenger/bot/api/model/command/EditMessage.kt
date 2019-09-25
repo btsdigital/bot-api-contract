@@ -47,6 +47,6 @@ data class EditMessage(
     val mediaList: List<InputMedia>? = null
 ) : Command("EditMessage") {
     @get:Valid
-    private val flatCommandRows: List<InlineCommand>
+    val flatCommandRows: List<InlineCommand>
         get() = inlineCommandRows?.flatten() ?: emptyList()
 }
