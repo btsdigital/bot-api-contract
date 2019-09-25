@@ -54,6 +54,6 @@ data class SendMessage(
     val mediaList: List<InputMedia> = emptyList()
 ) : Command("SendMessage") {
     @get:Valid
-    private val flatCommandRows: List<InlineCommand>
+    val flatCommandRows: List<InlineCommand>
         get() = inlineCommandRows.flatten()
 }
