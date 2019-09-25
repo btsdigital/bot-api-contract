@@ -12,7 +12,7 @@ plugins {
     id 'signing'
 }
 
-group = "kz.btsd.messenger.bot"
+group = "kz.btsd"
 version = version
 
 repositories {
@@ -95,7 +95,7 @@ if (project.hasProperty("jiraUsername") && project.hasProperty("jiraPass")) {
     publishing {
         publications {
             mavenJava(MavenPublication) {
-                groupId 'kz.btsd'
+                groupId group
                 artifactId 'bot-api-contract'
                 version version
                 from components.java
