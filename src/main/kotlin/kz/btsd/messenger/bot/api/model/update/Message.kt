@@ -18,5 +18,6 @@ data class Message(
     val likeCount: Long? = null,
     val repostCount: Long? = null,
     val viewCount: Long? = null,
-    val channelPostAuthor: Peer? = null
+    val channelPostAuthor: Peer? = null,
+    val replyToMessageId: String? = null
 ) : Update(updateId, "Message")
