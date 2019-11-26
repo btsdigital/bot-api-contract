@@ -1,10 +1,10 @@
 ---
-title: Service authorisation
+title: Service authorization
 sidebar: home_sidebar
 keywords: authorisation ,token
-permalink: Authorize.html
+permalink: authorization.html
 toc: false
-folder: Authozitaion
+folder: Authorization
 ---
 
 
@@ -13,5 +13,5 @@ folder: Authozitaion
 </p>
 <p> To authorize service request it's necessary to specify service token <i>(example, 51ae2е07-22e6-4m60-8929-4haj082127fa)</i> in a X-BOT-TOKEN value in request's header.
 <p>
-<p>Service token is provided by bot-father after creation of service. (add web link to bot-father docs).
+<p>Service token is provided by bot-father after creation of service.
 </p>

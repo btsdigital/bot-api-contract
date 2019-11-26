@@ -2,11 +2,11 @@ entries:
 - title: Sidebar
   levels: three
   folders:
-  - title: Authozitaion
+  - title: Authorization
     output: web
     folderitems:
-    - title: Service authozitaion
-      url: /authorize.html
+    - title: Service authorization
+      url: /authorization.html
       output: web
   - title: Requests
     output: web
