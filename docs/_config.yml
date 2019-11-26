@@ -1,0 +1,58 @@
+repository: btsdigital/bot-api-contract
+output: web
+topnav_title: B
+site_title: API сервера сервис-платформы
+company_name: BTSDigital
+github_editme_path: btsdigital/bot-api-contract/tree/master/docs/
+disqus_shortname:
+google_analytics:
+host: 127.0.0.1
+port: 4000
+exclude:
+  - .idea/
+  - .gitignore
+feedback_subject_line: bot-api-contract documentation
+feedback_email: tair.sabirgaliev@gmail.com
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+collections:
+  tooltips:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: home_sidebar
+      topnav: topnav
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      tooltip: true
+
+sidebars:
+- home_sidebar
+
+description: "API сервера сервис-платформы"
+# the description is used in the feed.xml file
+
+# needed for sitemap.xml file only
+url: http://github.com/btsdigital/bot-api-contract
+baseurl: /

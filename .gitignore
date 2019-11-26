@@ -3,3 +3,9 @@
 build
 out
 *.iml
+.jekyll-cache
+_site
+.bundle
+.sass-cache
+Gemfile.lock
+docs/_site

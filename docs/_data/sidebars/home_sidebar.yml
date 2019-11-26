@@ -1,0 +1,165 @@
+entries:
+- title: Sidebar
+  levels: three
+  folders:
+  - title: Authozitaion
+    output: web
+    folderitems:
+    - title: Service authozitaion
+      url: /authorize.html
+      output: web
+  - title: Requests
+    output: web
+    folderitems:
+    - title: Making requests
+      url: /makerequests.html
+      output: web
+    - title: CommandRequest
+      url: /commandrequest.html
+      output: web
+    - title: Endpoints
+      url: /endpoints.html
+      output: web
+  - title: Updates
+    output: web
+    folderitems:
+    - title: Getting updates
+      url: /gettingupdate.html
+      output: web
+    - title: retrieveUpdate
+      url: /retrieveUpdate.html
+      output: web
+    - title: setWebhook
+      url: /setwebhook.html
+      output: web
+    - title: deleteWebhook
+      url: /deletewebhook.html
+      output: web
+    - title: getWebhookInfo
+      url: /getwebhookinfo.html
+      output: web
+    - title: UpdateResponse
+      url: /updateresponse.html
+      output: web
+  - title: Types
+    output: web
+    folderitems:
+    - title: Peer
+      url: /peer.html
+      output: web
+    - title: InlineCommand
+      url: /inlinecommand.html
+      output: web
+    - title: UiState
+      url: /uistate.html
+      output: web
+    - title: ReplyCommand
+      url: /replycommand.html
+      output: web
+    - title: QuickButtonCommand
+      url: /quickbuttoncommand.html
+      output: web
+    - title: InputMedia
+      url: /inputmedia.html
+      output: web
+    - title: InputContact
+      url: /inputcontact.html
+      output: web
+    - title: Message
+      url: /message.html
+      output: web
+    - title: MessageEdited
+      url: /messageedited.html
+      output: web
+    - title: MessageIdAssigned
+      url: /messageidassigned.html
+      output: web
+    - title: MessageForwardMetadata
+      url: /messageforwardmetadata.html
+      output: web
+    - title: QuickButtonSelected
+      url: /quickbuttonselected.html
+      output: web
+    - title: InlineCommandSelected
+      url: /inlinecommandselected.html
+      output: web
+    - title: FormSubmitted
+      url: /formsubmitted.html
+      output: web
+    - title: FormMessageSent
+      url: /formmessagesent.html
+      output: web
+    - title: FormClosed
+      url: /formclosed.html
+      output: web
+    - title: InvitedToGroup
+      url: /invitedtogroup.html
+      output: web
+    - title: KickedFromGroup
+      url: /kickedfromgroup.html
+      output: web
+    - title: InvitedToChannel
+      url: /invitedtochannel.html
+      output: web
+    - title: KickedFromChannel
+      url: /kickedfromchannel.html
+      output: web
+    - title: NewChannelSubscriber
+      url: /newchannelsubscriber.html
+      output: web
+    - title: ChannelAdminAdded
+      url: /channeladminadded.html
+      output: web
+    - title: ChannelAdminDeleted
+      url: /channeladmindeleted.html
+      output: web
+    - title: ChannelPermissionsGranted
+      url: /channelpermissionsgranted.html
+      output: web
+    - title: ChannelPermissionsRevoked
+      url: /channelpermissionsrevoked.html
+      output: web
+    - title: WebhookInfo
+      url: /webhookinfo.html
+      output: web
+  - title: Methods
+    output: web
+    folderitems:
+    - title: SendMessage
+      url: /SendMessage.html
+      output: web
+    - title: EditMessage
+      url: /EditMessage.html
+      output: web
+    - title: DeleteMessage
+      url: /DeleteMessage.html
+      output: web
+    - title: SendContainerMessage
+      url: /SendContainerMessage.html
+      output: web
+    - title: EditContainerMessage
+      url: /EditContainerMessage.html
+      output: web
+    - title: SendContactMessage
+      url: /SendContactMessage.html
+    - title: ForwardMessage
+      url: /ForwardMessage.html
+      output: web
+    - title: SendUiState
+      url: /SendUiState.html
+      output: web
+    - title: KickFromGroup
+      url: /KickFromGroup.html
+      output: web
+    - title: ChangeGroupAvatar
+      url: /ChangeGroupAvatar.html
+      output: web
+    - title: DeleteGroupAvatar
+      url: /DeleteGroupAvatar.html
+      output: web
+    - title: ChangeGroupTitle
+      url: /ChangeGroupTitle.html
+      output: web
+    - title: ChangeGroupDescription
+      url: /ChangeGroupDescription.html
+      output: web
