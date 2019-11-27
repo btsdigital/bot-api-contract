@@ -12,7 +12,7 @@ folder: Commands
 <i>* Validation error text may vary depending on a source of an error</i>
 </p>
 
-## Desciprtion
+## Description
 
 <p> This method is for deletion service (bot) messages. 
 </p>

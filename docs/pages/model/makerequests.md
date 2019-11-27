@@ -9,7 +9,7 @@ folder: Requests
 
 <p> All requests are sent over HTTPS using UTF-8.
 </p>
-<p>GET,POST and DELETE (DELETE method is used for webhook removal) methods are supported.
+<p>GET, POST and DELETE (DELETE method is used for webhook removal) methods are supported.
 </p>
 <p> There are 3 ways of passing over request parameters:
 <ul>

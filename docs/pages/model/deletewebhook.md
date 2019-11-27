@@ -9,7 +9,7 @@ folder: Types
 
 ![Types](images/deleteWebhook.png "deleteWebhook")
 
-## Desciprtion
+## Description
 
 <p> This method is for removing url set for for service to get updates on. 
 </p>

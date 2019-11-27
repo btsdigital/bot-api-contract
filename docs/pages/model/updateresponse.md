@@ -7,7 +7,7 @@ toc: true
 folder: Updates
 ---
 
-## Desciprtion
+## Description
 
 <p> Object represents update recieved. UpdateResponse composed of an array of updates.
 </p>

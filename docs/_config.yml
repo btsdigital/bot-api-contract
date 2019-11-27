@@ -1,7 +1,7 @@
 repository: btsdigital/bot-api-contract
 output: web
 topnav_title: B
-site_title: API сервера сервис-платформы
+site_title: API of service-platform server
 company_name: BTSDigital
 github_editme_path: btsdigital/bot-api-contract/tree/master/docs/
 disqus_shortname:
@@ -12,7 +12,7 @@ exclude:
   - .idea/
   - .gitignore
 feedback_subject_line: bot-api-contract documentation
-feedback_email: tair.sabirgaliev@gmail.com
+feedback_email: opensource@btsdigital.kz
 
 highlighter: rouge
 markdown: kramdown
@@ -50,7 +50,7 @@ defaults:
 sidebars:
 - home_sidebar
 
-description: "API сервера сервис-платформы"
+description: "API of service-platform server"
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only

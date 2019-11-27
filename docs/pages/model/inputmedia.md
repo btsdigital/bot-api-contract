@@ -7,7 +7,7 @@ toc: true
 folder: Types
 ---
 
-## Desciprtion
+## Description
 
 <p> Object represents a collection of metadata describing media file. Object is sent as a element of array in message.
 </p>

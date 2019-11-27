@@ -9,7 +9,7 @@ folder: Types
 
 ![Types](images/SetWebhook.png "setWebhook")
 
-## Desciprtion
+## Description
 
 <p> This method is for setting an url for backend to send updates for service. 
 </p>

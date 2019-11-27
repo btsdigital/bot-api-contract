@@ -7,7 +7,7 @@ toc: true
 folder: Types
 ---
 
-## Desciprtion
+## Description
 
 <p> This object represents update  with a backend ID of the message. in return to sent message with a localID specified.
 </p>

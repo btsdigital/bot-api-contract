@@ -14,7 +14,7 @@ folder: Commands
 
 
 
-## Desciprtion
+## Description
 
 <p> This method is for changing  text of group dialog description .
 </p>
