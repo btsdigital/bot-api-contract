@@ -7,7 +7,7 @@ toc: true
 folder: Types
 ---
 
-## Desciprtion
+## Description
 
 <p> This object represents update  about form being submitted with a data on message being sent to dialog by messenger's backend after a user submitted a form.
 </p>

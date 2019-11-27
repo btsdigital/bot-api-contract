@@ -14,7 +14,7 @@ folder: Commands
 
 
 
-## Desciprtion
+## Description
 
 <p> This method is for changing  title of group dialog.
 </p>

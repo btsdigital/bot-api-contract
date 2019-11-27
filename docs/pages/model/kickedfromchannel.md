@@ -7,7 +7,7 @@ toc: true
 folder: Types
 ---
 
-## Desciprtion
+## Description
 
 <p> This object represents update  about removing service from channel subcribers.
 </p>

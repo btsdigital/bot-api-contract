@@ -9,7 +9,7 @@ folder: Types
 
 ![Types](images/retrieveUpdates.png "retrieveUpdate")
 
-## Desciprtion
+## Description
 
 <p> This method is for getting updates. 
 </p>

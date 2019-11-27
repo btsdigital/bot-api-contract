@@ -7,7 +7,7 @@ toc: true
 folder: Types
 ---
 
-## Desciprtion
+## Description
 
 <p> This object represents update  about adding a new channel subcriber.
 </p>

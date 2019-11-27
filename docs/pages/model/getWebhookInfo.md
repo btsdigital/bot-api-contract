@@ -9,7 +9,7 @@ folder: Types
 
 ![Types](images/getWebhookInfo.png "getWebhookInfo")
 
-## Desciprtion
+## Description
 
 <p> This method is for getting url set for for service to get updates on. 
 </p>

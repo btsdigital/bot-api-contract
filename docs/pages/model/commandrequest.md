@@ -7,7 +7,7 @@ toc: true
 folder: Requests
 ---
 
-## Desciprtion
+## Description
 
 <p> Object represents commands sent. CommandRequest composed of an array of commands.
 </p>

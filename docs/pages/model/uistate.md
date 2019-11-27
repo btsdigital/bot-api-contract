@@ -9,7 +9,7 @@ folder: Types
 
 ![Types](images/UiState.png "UiState")
 
-## Desciprtion
+## Description
 
 <p> Object represents a state of current UI between a service and a user.
 </p>

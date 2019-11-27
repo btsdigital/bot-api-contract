@@ -7,7 +7,7 @@ toc: true
 folder: Types
 ---
 
-## Desciprtion
+## Description
 
 <p> This object represents an update about edited message.
 </p>

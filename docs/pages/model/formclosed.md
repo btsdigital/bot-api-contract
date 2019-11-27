@@ -7,7 +7,7 @@ toc: true
 folder: Types
 ---
 
-## Desciprtion
+## Description
 
 <p> This object represents update  about form being closed by a user.
 </p>

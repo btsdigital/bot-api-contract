@@ -14,7 +14,7 @@ folder: Commands
 
 
 
-## Desciprtion
+## Description
 
 <p> This method is for changing avatar picture of group dialog.
 </p>

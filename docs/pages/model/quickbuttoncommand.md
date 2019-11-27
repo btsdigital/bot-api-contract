@@ -9,7 +9,7 @@ folder: Types
 
 ![Types](images/QuickButton.png "QuickButtonCommand")
 
-## Desciprtion
+## Description
 
 <p> This object represents a type of button sent as a part of UIstate. QuickButton is powerful item of Ui that provides execution of various functions in messenger client.
 </p>

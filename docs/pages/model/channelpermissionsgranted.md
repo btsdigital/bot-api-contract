@@ -7,7 +7,7 @@ toc: true
 folder: Types
 ---
 
-## Desciprtion
+## Description
 
 <p> This object represents an update about adding a service to channel admins if service isn't a channel admin or editing admin permissions if service is already a channel admin.
 </p>

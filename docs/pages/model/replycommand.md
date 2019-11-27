@@ -9,7 +9,7 @@ folder: Types
    
 ![Types](images/replycommand.png "replycommand")
    
-## Desciprtion
+## Description
    
 <p> This object represents a type of button sent as a part of UIstate. Text of a caption is sent to a dialog as new message from user when he pushes this button.
 </p>

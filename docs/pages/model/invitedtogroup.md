@@ -7,7 +7,7 @@ toc: true
 folder: Types
 ---
 
-## Desciprtion
+## Description
 
 <p> This object represents update  about adding service to a group dialog. By that fact service becomes new group member.
 </p>

@@ -12,7 +12,7 @@ folder: Commands
 <i>* Validation error text may vary depending on a source of an error</i>
 </p>
 
-## Desciprtion
+## Description
 
 <p> This method is for sending a message with a type container. In containers cards are sent. Card is an abstract object described in a json string. Card describes a complex graphical object written in a CSS Flexible Box Layout Module.
 </p>

@@ -2,6 +2,6 @@ topnav:
 - title: Topnav
   items:    
     - title: GitHub
-      external_url: https://github.com/btsdigital/bot-api-contracts
+      external_url: https://github.com/btsdigital/bot-api-contract
     - title: BTSDigital
       external_url: https://btsdigital.kz

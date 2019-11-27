@@ -9,7 +9,7 @@ folder: Types
 
 ![Types](images/inlinecommand.png "InlineCommand")
 
-## Desciprtion
+## Description
 
 <p> This object represents a type of button sent in a message, it has metadata parameter returned to a service when a button is pushed.
 </p>

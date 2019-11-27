@@ -12,7 +12,7 @@ folder: Commands
 <i>* Validation error text may vary depending on a source of an error</i>
 </p>
 
-## Desciprtion
+## Description
 
 <p> This method is for sending common messages from service (bot) to a dialog with a user, group dialog or a channel. 
 A common message from bot may include text messages, UI states, data about available commands or buttons and so on.

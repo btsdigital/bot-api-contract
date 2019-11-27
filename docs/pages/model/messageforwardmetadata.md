@@ -7,7 +7,7 @@ toc: true
 folder: Types
 ---
 
-## Desciprtion
+## Description
 
 <p> This object represents forwarded message data ( in present it's a peer type of message sender).
 </p>
