@@ -11,7 +11,7 @@ summary:
 
 Project is designed for fascilitation of service development in aitu ecosystem.
 
-Project is an open source and is under development process. You may [contribute](https://github.com/btsdigital/contribution.html) to the  and help to enhance it.
+Project is an open source and is under development process. You may [contribute](https://btsdigital.github.io/bot-api-contract/contribution.html) to the  and help to enhance it.
 
 
 ## License
