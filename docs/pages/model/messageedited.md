@@ -18,8 +18,8 @@ folder: Types
 |---|:---:|---|---|
 | updateId  | true |String| Backend ID of the update |
 | messageId  | true |String |  Backend ID of the message |
-| author  | true |Peer |  Sender of a message  |
-| dialog  | true | Peer |Recipient of a message |
+| author  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  Sender of a message  |
+| dialog  | true | [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |Recipient of a message |
 | content  | true | String| new text content |
 | type  | true | String | "MessageEdited" value must be filled
 

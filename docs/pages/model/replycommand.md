@@ -11,8 +11,9 @@ folder: Types
    
 ## Description
    
-<p> This object represents a type of button sent as a part of UIstate. Text of a caption is sent to a dialog as new message from user when he pushes this button.
-</p>
+This object represents a type of button sent as a part of [UiState](https://btsdigital.github.io/bot-api-contract/uistate.html). 
+Text of a caption is sent to a dialog as new [message](https://btsdigital.github.io/bot-api-contract/message.html) from user when he pushes this button.
+
     
 ## Structure
 
@@ -23,9 +24,9 @@ folder: Types
 ## Sample object
 
 ```
-   
-   		"ReplyCommand": {
-            		"caption": "PushMe",
-            	}
-   	
+   "replyKeyboard": [
+   	 			{
+   	 				"caption":"Reply button"
+   	 			}
+   	 		]
 ```

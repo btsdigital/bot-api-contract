@@ -9,9 +9,9 @@ folder: Types
 
 ## Description
 
-<p> Object represents a collection of contact data. 
-</p>
-<p>There 2 types to represent registered  and unregistered users in messenger.
+Object represents contact data. 
+
+<p>There are 2 types to represent registered  and unregistered users in messenger.
 </p>
 
 ## Structure

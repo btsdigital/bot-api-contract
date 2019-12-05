@@ -9,75 +9,76 @@ folder: Requests
 
 ## Description
 
-<p> All requests should be sent to a proper endpoints.
+<p> All requests should be sent to proper endpoints.
 </p>
 <p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/updates/" </b> is used for the following methods:
+
 <ul>
-<li> <i>retrieveUpdate;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/retrieveUpdate.html">retrieveUpdate</a>;</i>
 </li>
-<li> <i>SendMessage;</i>
+<li> <i> <a href="https://btsdigital.github.io/bot-api-contract/SendMessage.html">SendMessage</a> ;</i>
 </li>
-<li> <i>EditMessage;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/EditMessage.html">EditMessage</a>;</i>
 </li>
-<li> <i>DeleteMessage;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/DeleteMessage.html">DeleteMessage</a>;</i>
 </li>
-<li> <i>SendContainerMessage;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendContainerMessage.html">SendContainerMessage</a>;</i>
 </li>
-<li> <i>EditContainerMessage;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/EditContainerMessage.html">EditContainerMessage</a>;</i>
 </li>
-<li> <i>SendContactMessage;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendContactMessage.html">SendContactMessage</a>;</i>
 </li>
-<li> <i>ForwardMessage;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/ForwardMessage.html">ForwardMessage</a>;</i>
 </li>
-<li> <i>SendUiState;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendUiState.html">SendUiState</a>;</i>
 </li>
-<li> <i>KickFromGroup;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/KickFromGroup.html">KickFromGroup</a>;</i>
 </li>
-<li> <i>ChangeGroupAvatar;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/ChangeGroupAvatar.html">ChangeGroupAvatar</a>;</i>
 </li>
-<li> <i>DeleteGroupAvatar;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/DeleteGroupAvatar.html">DeleteGroupAvatar</a>;</i>
 </li>
-<li> <i>ChangeGroupTitle;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/ChangeGroupTitle.html">ChangeGroupTitle</a>;</i>
 </li>
-<li> <i>ChangeGroupDescription;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/ChangeGroupDescription.html">ChangeGroupDescription</a>;</i>
 </li>
 </ul>
 </p>
 
-<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/upload/" </b> is used for the <i>handleUploadFiles</i> method.
+<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/upload/" </b> is used for the <i><a href="">handleUploadFiles</a></i> method.
 </p>
 
-<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/download/" </b> is used for the <i>handleDownloadFile</i> method.
+<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/download/" </b> is used for the <i><a href="">handleDownloadFile</a></i> method.
 </p>
 
-<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/getMe/" </b> is used for the <i>getMe</i> method.
+<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/getMe/" </b> is used for the <i><a href="">getMe</a></i> method.
 </p>
 
-<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/avatar/" </b> is used for the <i>uploadAvatar</i> method.
+<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/avatar/" </b> is used for the <i><a href="">uploadAvatar</a></i> method.
 </p>
 
-<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/avatar/{fileId}/" </b> is used for the <i>downloadAvatar</i> method. It's neccesarry to put file Id of avatar instead of  {fileId} value in a endpoint string. 
+<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/avatar/{fileId}/" </b> is used for the <i><a href="">downloadAvatar</a></i> method. It's neccesarry to put file Id of avatar instead of  {fileId} value in a endpoint string. 
 </p>
 
-<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/channels/{channelId}/" </b> is used for the <i>getChannelInfo</i> method. It's neccesarry to put peer Id of a channel instead of  {channelId} value in a endpoint string. 
+<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/channels/{channelId}/" </b> is used for the <i><a href="">getChannelInfo</a></i> method. It's neccesarry to put peer Id of a channel instead of  {channelId} value in a endpoint string. 
 </p>
 
-<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/channels/{channelId}/admins/" </b> is used for the <i>getChannelAdmins</i> method. It's neccesarry to put peer Id of a channel instead of  {channelId} value in a endpoint string. 
+<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/channels/{channelId}/admins/" </b> is used for the <i><a href="">getChannelAdmins</a></i> method. It's neccesarry to put peer Id of a channel instead of  {channelId} value in a endpoint string. 
 </p>
 
-<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/channels/{channelId}/messages/" </b> is used for the <i>getChannelMessages</i> method. It's neccesarry to put peer Id of a channel instead of  {channelId} value in a endpoint string. 
+<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/channels/{channelId}/messages/" </b> is used for the <i><a href="">getChannelMessages</a></i> method. It's neccesarry to put peer Id of a channel instead of  {channelId} value in a endpoint string. 
 </p>
 
-<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/user/{userId}/avatar/" </b> is used for the <i>getAvatars</i> method. It's neccesarry to put peer Id of a user instead of  {userId} value in a endpoint string. 
+<p> Endpoint <b> "https://messapi.btsdapps.net/bot/v1/user/{userId}/avatar/" </b> is used for the <i><a href="">getAvatars</a></i> method. It's neccesarry to put peer Id of a user instead of  {userId} value in a endpoint string. 
 </p>
 
 <p> Endpoint <b> "/https://messapi.btsdapps.net/bot/v1/webhook/" </b> is used for the following methods:
 <ul>
-<li> <i>getWebhookInfo;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/getwebhookinfo.html">getWebhookInfo;</a></i>
 </li>
-<li> <i>setWebhook;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/setwebhook.html">setWebhook;</a></i>
 </li>
-<li> <i>deleteWebhook;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/deletewebhook.html">deleteWebhook;</a></i>
 </li>
 </ul>
 </p>

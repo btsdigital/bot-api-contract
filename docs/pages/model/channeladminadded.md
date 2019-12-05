@@ -20,7 +20,7 @@ folder: Types
 |---|:---:|---|---|
 | updateId  | true |String| Backend ID of the update |
 | channelId  | true |String| Backend ID of a channel (peer) |
-| admin  | true |Peer| New channel admin |
+| admin  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html)| New channel admin |
 | type  | true | String | "ChannelAdminAdded" value must be filled
 
 ## Sample object

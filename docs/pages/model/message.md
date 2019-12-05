@@ -9,7 +9,12 @@ folder: Types
 
 ## Description
 
-<p> This object represents an update with a new message sent to a service.
+<p> This object represents an update about a new message sent to dialog with a service.
+</p>
+
+New message might be sent by user directly or through the use of [ReplyCommand](https://btsdigital.github.io/bot-api-contract/replycommand.html).
+
+<p> Messages sent to dialog through the use of QUICK_FORM_ACTION type of <a href="https://btsdigital.github.io/bot-api-contract/quickbuttoncommand.html">Quickbuttons</a> wont be returned in this updates.
 </p>
 
 ## Structure
@@ -19,15 +24,15 @@ folder: Types
 | updateId  | true |String| Backend ID of the update |
 | messageId  | true |String |  Backend ID of the message |
 | sentAt  | true |ZonedDateTime|  Time and date of sending a message |
-| author  | true |Peer |  Sender of a message  |
-| dialog  | true | Peer |Recipient of a message |
+| author  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  Sender of a message  |
+| dialog  | true | [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |Recipient of a message |
 | content  | true | String| Text content  |
-| forwardMetadata| false |MessageForwardMetadata |  Data of original message |
+| forwardMetadata| false |[MessageForwardMetadata](https://btsdigital.github.io/bot-api-contract/messageforwardmetadata.html) |  Original message info |
 | likeCount  | false |Long |  Quantity of likes received (for channel dialogs)  |
-| Media  | false | Media| List of Media type objects  |
+| Media  | false | List of [Media](https://btsdigital.github.io/bot-api-contract/media.html)| List of media objects  |
 | repostCount  | false | Long | Quantity of reposts done (for channel dialogs) |
 | viewCount  | false |Long  |Quantity of post views (for channel dialogs)  |
-| channelPostAuthor  | false |Peer |  Author of a channel post who offered it for posting to channel (this author can't post in channel)  |
+| channelPostAuthor  | false |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  Author of a channel post who offered it for posting to channel (this author can't post in channel)  |
 | type  | true | String | "Message" value must be filled
 
 ## Sample object

@@ -16,7 +16,7 @@ folder: Commands
 
 ## Description
 
-<p> This method is for changing  text of group dialog description .
+<p> This method is for filling in/editing  text of group dialog description .
 </p>
 <p> On succes empty response with http code 200 is returned.
 </p>
@@ -47,6 +47,13 @@ https://messapi.btsdapps.net/bot/v1/updates/
 }
 ```
 
+## Updates
+
+<p>This method may asynchronously return following updates:
+</p>
+
+N/A
+
 ## Possible business exceptions
 
 <i>Common context
@@ -55,7 +62,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 <ul>
 <li> Changing group description isn't available if a group dialog wasn't found (deleted/ID error);
 </li>
-<li> Changing group description  isn't available if service isn't a group owner and admin with BOT_EDIT_PROFILE permission;
+<li> Changing group description  isn't available if service isn't a group owner/admin with BOT_EDIT_PROFILE permission;
 </li>
 </ul>
 </p>

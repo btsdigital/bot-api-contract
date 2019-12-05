@@ -13,7 +13,7 @@ folder: Types
 
 <p> This method is for getting url set for for service to get updates on. 
 </p>
-<p> On succes WebhookInfo object with http code 200 is returned.
+<p> On succes <a href="https://btsdigital.github.io/bot-api-contract/webhookinfo.html">WebhookInfo</a> object with http code 200 is returned.
 </p>
 
 ## Endpoint

@@ -1,7 +1,7 @@
 ---
 title: QuickButtonCommand
 sidebar: home_sidebar
-keywords: Quick, Button,Command, QuickButtonCommand 
+keywords: Quick, Button,Command, QuickButtonCommand, metadata, form action, action
 permalink: quickbuttoncommand.html
 toc: true
 folder: Types
@@ -11,18 +11,18 @@ folder: Types
 
 ## Description
 
-<p> This object represents a type of button sent as a part of UIstate. QuickButton is powerful item of Ui that provides execution of various functions in messenger client.
-</p>
+This object represents a type of button sent as a part of [UIstate](https://btsdigital.github.io/bot-api-contract/uistate.html). QuickButton is powerful item of Ui that provides execution of various functions in messenger client with the use of form action mechanism.
+
 
 ## Structure
 
-Variable  | Obligative  | Type| Validation| Description
+| Variable  | Obligative  | Type| Validation| Description
 |---|:---:|---|---|---|
-| caption | true | String | Caption length should be <= 32, recommended is 20 |Title of corresponding button displayed in messenger's UI|
-| action* | true |  QuickButtonAction | -   | An object QuickButtonAction. Corresponds to a specific type of action for messenger client to perfom  |
-| metadata | true |  String |Metadata length should be <= 255  | Json or any string to be returned to a service as a parameter in update QuickButtonSelected for processing  |
+| caption | true | String | Caption length should be <= 32, recommended is 20 |Title of corresponding button displayed in messenger's UI |
+| action | true | enum | Specific type of item must be set |Types of QuickButtonAction. Corresponds to a specific type of action for messenger client to perform  |
+| metadata | true | String | Metadata length should be <= 255  |Json or any string to be returned to a service as a parameter in update QuickButtonSelected for processing and/or data used by client to perform specific action |
 
-There are 2 enum types of action may be specified:
+There are 2 main enum types of action:
 
 <ul>
 <li>QUICK_REQUEST</li>
@@ -31,14 +31,25 @@ There are 2 enum types of action may be specified:
 
 ## QUICK_REQUEST 
 
-If specified messenger client would return to a service an update QuickButtonSelected with a metadata string after this button is pushed.
+For this messenger client would return to a service an update QuickButtonSelected with a metadata string after this button is pushed.
 
 ## QUICK_FORM_ACTION
 
-If specified messenger client calls a specific function determined in a json string sent in a metadata variable after this button is pushed.
-This type of action  may invoke native mobile device functions as well.</p>
+For this messenger client calls a specific function determined by json object sent in metadata  after this button is pushed (contents of json object in metadata must be shielded).
+This type of action  may invoke native mobile device functions as well.
 
-## Types of QUICK_FORM_ACTION
+Template of json object for metadata:
+
+```
+
+		"metadata"= "{
+            "action":"QUICK_FORM_ACTION*",
+            "data_template":"data template*"
+         }"
+	
+```
+
+## Types of QUICK_FORM_ACTION*
 
 <p> There are folowing types of QUICK_FORM_ACTION:</p>
 <ul>
@@ -53,82 +64,120 @@ This type of action  may invoke native mobile device functions as well.</p>
 
 
 
+<b>send_message
+</b>
 
-<b>send_private_data</b>
+<p>This type of action provides sending text or content in a form (included in UiState) to a dialog.
+</p>
 
-<p>This type of action provides sending user's current phone number and geolocation data to a dialog.</p>
+For this action service gets  [FormMessageSent](https://btsdigital.github.io/bot-api-contract/formmessagesent.html) update that means that through the use of this action a new message was sent to dialog (no message update is sent).
 
-<b>send_message</b>
+<b>submit_form
+</b>
 
-<p>This type of action provides sending metadata to a service and to a dialog.</p>
+<p>This type of action provides sending metadata to a service without sending a message to a dialog.
+</p>
 
-<b>submit_form</b>
+For this action service gets  [FormSubmitted](https://btsdigital.github.io/bot-api-contract/formsubmitted.html) update that means that user pushed this button.
 
-<p>This type of action provides sending metadata to a service.</p>
+<b>open_url
+</b>
 
-<b>open_url</b>
+<p>This type of action provides opening weblink/deep link specified in metadata in a native web browser or app.
+</p>
 
-<p>This type of action provides opening weblink specified in metadata in a native web browser.</p>
+For this action service gets  [FormSubmitted](https://btsdigital.github.io/bot-api-contract/formsubmitted.html) update that means that user pushed this button.
 
-<b>share_data</b>
+<b>share_data
+</b>
 
-<p>This type of action provides sharing data specified in metadata in a native share content UI.</p>
+<p>This type of action provides sharing text specified in metadata by opening list of apps to use for sharing.
+</p>
 
-<b>redirect_call</b>
-
-<p>This type of action provides invoking native calling app along with adding a phone number specified in metadata.</p>
+For this action service gets  [FormSubmitted](https://btsdigital.github.io/bot-api-contract/formsubmitted.html) update that means that user pushed this button.
 
 <b>open_peer</b>
 
-<p>This type of action provides opening a dialog with a peer specified in metadata. 
-If peer is a service and user already has a dialog with it then this dialog is to be opened, if user doesn't have a dialog with a service then service profile is to be opened.
-Opening a group dialog is not supported.</p>
+<p>This type of action provides opening a dialog with a peer specified in metadata or opening it's profile.
+</p>
 
-<p> Metadata composed of a json string, syntax is described in Form-Builder documentation. (add web-link) </p>
+For this action service gets  [FormSubmitted](https://btsdigital.github.io/bot-api-contract/formsubmitted.html) update that means that user pushed this button.
+
+If peer is a service and user already has a dialog with it then this dialog is to be opened, if user doesn't have a dialog with a service then client opens this service's profile.
+<p>If peer is a user client opens a user profile.
+</p>
+Opening a group dialog or channel is not supported.
+
+<b>redirect_call</b>
+
+<p>This type of action provides invoking native calling app with a phone number filled and ready to make a phone call.
+</p>
+
+For this action service gets  [FormSubmitted](https://btsdigital.github.io/bot-api-contract/formsubmitted.html) update that means that user pushed this button.
+
+<b>send_private_data
+</b>
+
+<p>This type of action provides sending user's phone number registered for account to a dialog.
+</p>
+
+For this action service gets  [FormMessageSent](https://btsdigital.github.io/bot-api-contract/formmessagesent.html) (for updated services) and [FormSubmitted](https://btsdigital.github.io/bot-api-contract/formmessagesent.html) (for old services) updates that means that through the use of this action a new message was sent to dialog (no message update is sent). 
+
+<p> Every form action needs specific data template to be sent in json object.
+</p>
+
+| Action  |  Data template | IOS support|Android support| Description
+|---|:---:|---|---|---|
+| send_message | {form.id.content[n].id}/plain text | + | + | if specified {form.id.content[n].id}, client sends to dialog content of  field user filled in a form, if plain text specified it is sent to dialog as it is   |
+| submit_form | {form.id.content[n].id}/plain text | + | + | if specified {form.id.content[n].id}, client sends to service content of  field user filled in a form, if plain text specified it is sent to service as it is   |
+| close_form | - | + | + | Client closes a form   |
+| open_url | URL/Deeplink | + | + | Client opens web-page by a default web-browser or mobile app |
+| share_data | Plain text | + | + | Client opens dialog with a list of installed apps to choose one for sharing a text string|
+| open_peer | @username | + | + | Client opens dialog with user/service or service's profile  |
+| send_private_data | "phone XXX" | + | + | Client asks user for approval if positive it sends user's phone number to dialog |
+| redirect_call |+phone_number*  | + | + |Client opens native calling app with specified phone number pasted   |
+
+<p> * number from 0 to 9, max 15 symbols
+</p>
 
 ## Sample object
 ```
-{
-	 "commands": [{
-	 	"type": "SendUiState",
-	 	"recipient": {
-	 		"type": "USER",
-	 		"id": "ba017bae-e3e8-11e8-b418-7a609eaf8200"
-	 	},
-	 	"dialog": {
-	 		"type": "USER",
-	 		"id": "ba017bae-e3e8-11e8-b418-7a609eaf8200"
-	 	},
-	 	"uiState": {
-	 		"canWriteText": true,
-	 		"showCameraButton": true,
-	 		"showShareContactButton": true,
-	 		"showRecordAudioButton": true,
-	 		"showGalleryButton": true,
-	 		"showSpeechToTextButton": true,
-	 		"quickButtonCommands": [
-	 			{
-		 			"caption":"Send your phone #",
-		 			"action":"QUICK_FORM_ACTION",
-		 			"metadata":"{\r\n   \"action\" : \"send_private_data\",\r\n   \"data_template\" : \"phone XXX\"\r\n}"
-		 		},
-	 			{
-		 			"caption":"Empty Button",
-		 			"action":"QUICK_REQUEST",
-		 			"metadata":""
-	 			}
-	 		],
-	 		"formMessage": {
-	 			"jsonForm": "{\n  
-	 			\"form\": {\n    
-	 			\"id\": \"form_1\",\n    
-	 			\"header\": {\n      
-	 			\"type\": \"title\",\n      
-	 			\"title\": \"Конвертация (sample)\",\n      
-	 			\"options\": {\n        
-	 			\"closeable\": true\n      }\n    },\n    \"content\": [\n      {\n        \"id\": \"sample_description\",\n        \"type\": \"text\",\n        \"title\": \"Здесь мы видим пример FormMessage. Это измененная форма из бота конвертера валют. Обратите внимание, что поле ввода Сумма имеет предустановленное значение text, а поле ввода Комментарий не имеет предустановленного значения text\"\n      },\n      {\n        \"id\": \"from\",\n        \"type\": \"catalog\",\n        \"title\": \"Из\",\n        \"placeholder\": \"placeholder\",\n        \"default_value\": {\n          \"id\": \"usd\",\n          \"title\": \"USD\",\n          \"description\": \"Доллар США\"\n        },\n        \"validations_rules\": [\n          {\n            \"type\": \"required\",\n            \"value\": \"true\",\n            \"error\": \"Поле не должно быть пустым\"\n          }\n        ],\n        \"catalog\": {\n          \"options\": {\n            \"title\": \"Выберите валюту\",\n            \"search_enabled\": false,\n            \"closeable\": true\n          },\n          \"items\": [\n            {\n              \"id\": \"usd\",\n              \"title\": \"USD\",\n              \"description\": \"Доллар США\"\n            },\n            {\n              \"id\": \"eur\",\n              \"title\": \"EUR\",\n              \"description\": \"Евро\"\n            },\n            {\n              \"id\": \"KZT\",\n              \"title\": \"KZT\",\n              \"description\": \"Казахстанский тенге\"\n            },\n            {\n              \"id\": \"RUB\",\n              \"title\": \"RUB\",\n              \"description\": \"Российский рубль\"\n            }\n          ]\n        }\n      },\n      {\n        \"id\": \"to\",\n        \"type\": \"catalog\",\n        \"title\": \"В\",\n        \"placeholder\": \"placeholder\",\n        \"default_value\": {\n          \"id\": \"KZT\",\n          \"title\": \"KZT\",\n          \"description\": \"Казахстанский тенге\"\n        },\n        \"validations_rules\": [\n          {\n            \"type\": \"required\",\n            \"value\": \"true\",\n            \"error\": \"Поле не должно быть пустым\"\n          }\n        ],\n        \"catalog\": {\n          \"options\": {\n            \"title\": \"Выберите валюту\",\n            \"search_enabled\": false,\n            \"closeable\": true\n          },\n          \"items\": [\n            {\n              \"id\": \"usd\",\n              \"title\": \"USD\",\n              \"description\": \"Доллар США\"\n            },\n            {\n              \"id\": \"eur\",\n              \"title\": \"EUR\",\n              \"description\": \"Евро\"\n            },\n            {\n              \"id\": \"KZT\",\n              \"title\": \"KZT\",\n              \"description\": \"Казахстанский тенге\"\n            },\n            {\n              \"id\": \"RUB\",\n              \"title\": \"RUB\",\n              \"description\": \"Российский рубль\"\n            }\n          ]\n        }\n      },\n      {\n        \"id\": \"sum\",\n        \"type\": \"input\",\n        \"title\": \"Сумма\",\n        \"text\": \"1000\",\n        \"placeholder\": \"Введите сумму\",\n        \"validations_rules\": [\n          {\n            \"type\": \"required\",\n            \"value\": \"true\",\n            \"error\": \"Поле не должно быть пустым\"\n          }\n        ],\n        \"options\": {\n          \"input_type\": \"number\"\n        }\n      },\n      {\n        \"id\": \"comment\",\n        \"type\": \"text_area\",\n        \"title\": \"Комментарий\",\n        \"placeholder\": \"Введите комментарий к операции\",\n        \"options\": {\n          \"max_length\": \"30\"\n        }\n      },\n      {\n        \"id\": \"submit\",\n        \"type\": \"submit\",\n        \"title\": \"РАССЧИТАТЬ\",\n        \"form_action\": {\n          \"action\": \"send_message\",\n          \"data_template\": \"{form_1.sum} {form_1.from} в {form_1.to} ({form_1.comment})\"\n        }\n      }\n    ]\n  }\n}"
-	 		}
-	 	}
-	 }]
-}
+"quickButtonCommands": [
+ 	 			{
+ 		 			"caption":"Send your phone #",
+ 		 			"action":"QUICK_FORM_ACTION",
+ 		 			"metadata":"{\r\n   \"action\" : \"send_private_data\",\r\n   \"data_template\" : \"phone XXX\"\r\n}"
+ 		 		},
+ 	 			{
+ 		 			"caption":"Empty Button",
+ 		 			"action":"QUICK_REQUEST",
+ 		 			"metadata":"test"
+ 	 			},
+ 	 			{
+ 		 			"caption":"Go to link",
+ 		 			"action":"QUICK_FORM_ACTION",
+ 		 			"metadata":"{\r\n   \"action\" : \"open_url\",\r\n   \"data_template\" : \"https://www.youtube.com/watch?v=XNJTVLFotr0\"\r\n}"
+ 	 			},
+ 	 			{
+ 		 			"caption":"Send message",
+ 		 			"action":"QUICK_FORM_ACTION",
+ 		 			"metadata":"{\r\n   \"action\" : \"send_message\",\r\n   \"data_template\" : \"В начале было слово\"\r\n}"
+ 	 			},
+ 	 			{
+ 		 			"caption":"Share text",
+ 		 			"action":"QUICK_FORM_ACTION",
+ 		 			"metadata":"{\r\n   \"action\" : \"share_data\",\r\n   \"data_template\" : \"Share me\"\r\n}"
+ 	 			},
+ 	 			{
+ 		 			"caption":"Open peer",
+ 		 			"action":"QUICK_FORM_ACTION",
+ 		 			"metadata":"{\r\n   \"action\" : \"open_peer\",\r\n   \"data_template\" : \"@MasterService\"\r\n}"
+ 	 			},
+ 	 			{
+ 		 			"caption":"Call me maybe",
+ 		 			"action":"QUICK_FORM_ACTION",
+ 		 			"metadata":"{\r\n   \"action\" : \"redirect_call\",\r\n   \"data_template\" : \"+77072771478\"\r\n}"
+ 	 			}
+ 	 			
+ 	 		]
 ```

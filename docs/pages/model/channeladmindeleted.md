@@ -20,7 +20,7 @@ folder: Types
 |---|:---:|---|---|
 | updateId  | true |String| Backend ID of the update |
 | channelId  | true |String| Backend ID of a channel (peer) |
-| admin  | true |Peer| Channel admin removed |
+| admin  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html)| Channel admin removed |
 | type  | true | String | "ChannelAdminDeleted" value must be filled
 
 ## Sample object

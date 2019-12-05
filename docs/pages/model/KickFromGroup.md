@@ -29,7 +29,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 |---|:---:|---|---|---|
 | type | true | String | Must be filled with "KickFromGroup" value |Type of request "KickFromGroup" |
 | groupId  | true |  String | groupId must be a valid UUID| String for specifying ID of group dialog to remove a member from |
-| peerToKick  | true |  Peer | For Peer type validation see type page| Peer to be removed from group |
+| peerToKick  | true |  [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) | For Peer type validation see type page| Peer to be removed from group |
 
 ## Sample request
 
@@ -47,6 +47,13 @@ https://messapi.btsdapps.net/bot/v1/updates/
    ]
 }
 ```
+
+## Updates
+
+<p>This method may asynchronously return following updates:
+</p>
+
+N/A
 
 ## Possible business exceptions
 

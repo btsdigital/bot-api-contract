@@ -24,6 +24,6 @@ folder: Requests
 <p> Response contains http status and text of exception in case if any kind of error occur.
 </p>
 
-<p> To send a command request CommandRequest object is sent.
-</p> 
-CommandRequest composed of an array of Command type objects.
+To send a command request [CommandRequest](https://btsdigital.github.io/bot-api-contract/commandrequest.html)  object is sent.
+<p>CommandRequest composed of an array of Command type objects.
+</p>

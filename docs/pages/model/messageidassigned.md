@@ -20,7 +20,7 @@ folder: Types
 |---|:---:|---|---|
 | updateId  | true |String| Backend ID of the update |
 | localId  | true |String |  Service ID of the message |
-| dialog  | true | Peer |Recipient of a message |
+| dialog  | true | [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |Recipient of a message |
 | id  | true | String| Backend ID of the message |
 | type  | true | String | "MessageIdAssigned" value must be filled
 

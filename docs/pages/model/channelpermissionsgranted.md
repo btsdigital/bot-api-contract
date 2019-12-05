@@ -19,7 +19,7 @@ folder: Types
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
 | updateId  | true |String| Backend ID of the update |
-| channel  | true |Peer| Peer channel object |
+| channel  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html)| Peer channel object |
 | permissions  | true |list of string| Channel admin permission list |
 | type  | true | String | "ChannelPermissionsGranted" value must be filled
 

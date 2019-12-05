@@ -15,41 +15,41 @@ folder: Updates
 </p>
 <p> There are folowing types of updates available:
 <ul>
-<li> <i>Message;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/message.html">Message</a>;</i>
 </li>
-<li> <i>MessageEdited;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/messageedited.html">MessageEdited</a>;</i>
 </li>
-<li> <i>MessageIdAssigned;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/messageidassigned.html">MessageIdAssigned</a>;</i>
 </li>
-<li> <i>MessageForwardMetadata;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/messageforwardmetadata.html">MessageForwardMetadata</a>;</i>
 </li>
-<li> <i>QuickButtonSelected;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/quickbuttonselected.html">QuickButtonSelected</a>;</i>
 </li>
-<li> <i>InlineCommandSelected;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/inlinecommandselected.html">InlineCommandSelected</a>;</i>
 </li>
-<li> <i>FormSubmitted;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/formsubmitted.html">FormSubmitted</a>;</i>
 </li>
-<li> <i>FormMessageSent;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/formmessagesent.html">FormMessageSent</a>;</i>
 </li>
-<li> <i>FormClosed;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/formclosed.html">FormClosed</a>;</i>
 </li>
-<li> <i>InvitedToGroup;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/invitedtogroup.html">InvitedToGroup</a>;</i>
 </li>
-<li> <i>KickedFromGroup;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/kickedfromgroup.html">KickedFromGroup</a>;</i>
 </li>
-<li> <i>InvitedToChannel;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/invitedtochannel.html">InvitedToChannel</a>;</i>
 </li>
-<li> <i>KickedFromChannel;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/kickedfromchannel.html">KickedFromChannel</a>;</i>
 </li>
-<li> <i>NewChannelSubscriber;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/newchannelsubscriber.html">NewChannelSubscriber</a>;</i>
 </li>
-<li> <i>ChannelAdminAdded;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/channeladminadded.html">ChannelAdminAdded</a>;</i>
 </li>
-<li> <i>ChannelAdminDeleted;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/channeladmindeleted.html">ChannelAdminDeleted</a>;</i>
 </li>
-<li> <i>ChannelPermissionsGranted;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/channelpermissionsgranted.html">ChannelPermissionsGranted</a>;</i>
 </li>
-<li> <i>ChannelPermissionsRevoked;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/channelpermissionsrevoked.html">ChannelPermissionsRevoked</a>;</i>
 </li>
 </ul>
 </p>

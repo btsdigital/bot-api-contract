@@ -19,7 +19,7 @@ folder: Types
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
 | updateId  | true |String| Backend ID of the update |
-| peer  | true |Peer| New channel subcriber |
+| peer  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html)| New channel subcriber |
 | channelId  | true |String| Backend ID of a channel (peer) |
 | type  | true | String | "NewChannelSubscriber" value must be filled
 

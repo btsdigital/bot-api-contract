@@ -18,7 +18,7 @@ folder: Types
 
 | Variable  | Obligative  | Type| Description
 |---|:---:|---|
-| sender  | true |Peer | Forwarded message sender |
+| sender  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) | Forwarded message sender |
 
 ## Sample object
 

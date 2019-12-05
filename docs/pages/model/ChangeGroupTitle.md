@@ -46,6 +46,13 @@ https://messapi.btsdapps.net/bot/v1/updates/
 }
 ```
 
+## Updates
+
+<p>This method may asynchronously return following updates:
+</p>
+
+N/A
+
 ## Possible business exceptions
 
 <i>Common context
@@ -54,7 +61,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 <ul>
 <li> Changing group title isn't available if a group dialog wasn't found (deleted/ID error);
 </li>
-<li> Changing group title  isn't available if service isn't a group owner and admin with BOT_EDIT_PROFILE permission;
+<li> Changing group title  isn't available if service isn't a group owner/admin with BOT_EDIT_PROFILE permission;
 </li>
 </ul>
 </p>
