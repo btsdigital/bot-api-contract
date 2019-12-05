@@ -18,6 +18,8 @@ folder: Commands
 
 <p> This method is for changing avatar picture of group dialog.
 </p>
+
+It's neccesarry to specify avatar file ID which is returned after [uploading avatar]() (not a file). 
 <p> On succes empty response with http code 200 is returned.
 </p>
 
@@ -47,6 +49,14 @@ https://messapi.btsdapps.net/bot/v1/updates/
 }
 ```
 
+## Updates
+
+<p>This method may asynchronously return following updates:
+</p>
+
+N/A
+
+
 ## Possible business exceptions
 
 <i>Common context
@@ -57,7 +67,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 </li>
 <li> Changing group avatar isn't available if media file according to fileId specified wasn't found (for this method avatar fileId required);
 </li>
-<li> Changing group avatar  isn't available if service isn't a group owner and admin with BOT_EDIT_PROFILE permission ;
+<li> Changing group avatar  isn't available if service isn't a group owner/admin with BOT_EDIT_PROFILE permission ;
 </li>
 </ul>
 </p>

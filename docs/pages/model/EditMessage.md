@@ -29,12 +29,12 @@ https://messapi.btsdapps.net/bot/v1/updates/
 |---|:---:|---|---|---|
 | type | true | String | Must be filled with "EditMessage" value |Type of request "EditMessage" |
 | messageId | true |  String |Value must be a valid Time UUID  | Backend ID of a message to edit  |
-| recipient  | true |  Peer | For Peer type validation see type page| Peer message to edit was sent to |
+| recipient  | true |  [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) | For Peer type validation see type page| Peer message to edit was sent to |
 | content| true |  String |Content length should be <= 4096  | Text of a message to replace original  |
-| inlineCommands  | false | List of InlineCommand  | Number of inlineCommands should be <= 8, recommended number is 3. For inlineCommand type validation see type page | List of InlineCommands   (list of buttons that will be displayed on Messenger UI inside the message). Currently this is deprecated, use inlineCommandRows
-| inlineCommandRows  | false |List of lists of InlineCommand to replace original  | Table should not have more than 25 rows, 25 columns|List containing lists of InlineCommands (Table of buttons that will be displayed on Messenger UI inside the message)|
-| uiState  | false | UiState |For uiState type validation see type page |Bot Ui State buttons with ReplyKeyboard and QuickButtons  |
-| mediaList  | false | List of InputMedia  |mediaList size should be <= 100. For InputMedia type validation see type page  |List of InputMedia. Media content to replace original |
+| inlineCommands  | false | List of [InlineCommand](https://btsdigital.github.io/bot-api-contract/inlinecommand.html)  | Number of inlineCommands should be <= 8, recommended number is 3. For inlineCommand type validation see type page | List of InlineCommands   (list of buttons that will be displayed on Messenger UI inside the message). Currently this is deprecated, use inlineCommandRows
+| inlineCommandRows  | false |List of [InlineCommand](https://btsdigital.github.io/bot-api-contract/inlinecommand.html) lists | Table should not have more than 25 rows, 25 columns|List containing lists of InlineCommands (Table of buttons that will be displayed on Messenger UI inside the message)|
+| uiState  | false | [UiState](https://btsdigital.github.io/bot-api-contract/uistate.html) |For uiState type validation see type page |Bot Ui State buttons with ReplyKeyboard and QuickButtons  |
+| mediaList  | false | List of [InputMedia](https://btsdigital.github.io/bot-api-contract/inputmedia.html)  |mediaList size should be <= 100. For InputMedia type validation see type page  |List of InputMedia. Media content to replace original |
 
 ## Sample request
 
@@ -54,8 +54,14 @@ https://messapi.btsdapps.net/bot/v1/updates/
 }
 ```
 
-## Possible business exceptions
+## Updates
 
+<p>This method may asynchronously return following updates:
+</p>
+
+N/A
+
+## Possible business exceptions
 
 <i>Common context </i>
 <p>

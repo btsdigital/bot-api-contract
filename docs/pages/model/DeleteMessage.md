@@ -14,7 +14,7 @@ folder: Commands
 
 ## Description
 
-<p> This method is for deletion service (bot) messages. 
+<p> This method is for removing messages from dialog. 
 </p>
 <p> On succes empty response with http code 200 is returned.
 </p>
@@ -30,7 +30,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 |---|:---:|---|---|---|
 | type | true | String | Must be filled with "DeleteMessage" value |Type of request "DeleteMessage" |
 | messageId | true |  String |Value must be a valid Time UUID  | Backend ID of a message to delete  |
-| dialog  | true |  Peer | For Peer type validation see type page| Peer message to delete was sent to |
+| dialog  | true |  [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) | For Peer type validation see type page| Peer message to delete was sent to |
 
 ## Sample request
 
@@ -49,6 +49,13 @@ https://messapi.btsdapps.net/bot/v1/updates/
 }
 ```
 
+## Updates
+
+<p>This method may asynchronously return following updates:
+</p>
+
+N/A
+
 ## Possible business exceptions
 
 <i>Common context
@@ -58,7 +65,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 <ul>
     <li>Service isn't able to delete message if it wasn't found (deleted/ID error);
     </li>
-    <li>Service isn't able to delete forwarded messages those it's not an owner of;
+    <li>Service isn't able to delete  messages it doesn't own;
     </li>
 </ul>
 </p>

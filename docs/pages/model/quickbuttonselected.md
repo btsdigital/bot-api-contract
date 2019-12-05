@@ -9,16 +9,15 @@ folder: Types
 
 ## Description
 
-<p> This object represents update about quick button pushed by a user.
-</p>
+This object represents update about selected quick button. This type of update is returned for [QuickRequest action type](https://btsdigital.github.io/bot-api-contract/quickbuttoncommand.html) of QuickButton.
 
 ## Structure
 
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
 | updateId  | true |String| Backend ID of the update |
-| dialog  | true |Peer |  Dialog in which quick button was pushed |
-| sender  | true |Peer |  User who pushed quick button  |
+| dialog  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  Dialog in which quick button was pushed |
+| sender  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  User who pushed quick button  |
 | metadata  | true | String |metadata transitioned with quick button for a service to process |
 | type  | true | String | "QuickButtonSelected" value must be filled
 

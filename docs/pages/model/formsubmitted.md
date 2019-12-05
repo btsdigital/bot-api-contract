@@ -9,7 +9,7 @@ folder: Types
 
 ## Description
 
-<p> This object represents update  about a form being submitted in a dialog.
+<p> This object represents update  about a form being submitted (or selected quickbutton with <a href="https://btsdigital.github.io/bot-api-contract/quickbuttoncommand.html#types-of-quick_form_action">QUICK_FORM_ACTION type</a>) in a dialog.
 </p>
 
 ## Structure
@@ -18,8 +18,8 @@ folder: Types
 |---|:---:|---|---|
 | updateId  | true |String| Backend ID of the update |
 | formId  | true |String| Backend ID of a form |
-| dialog  | true |Peer |  Dialog in which form was submitted |
-| sender  | true |Peer |  User who submitted a form  |
+| dialog  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  Dialog in which form was submitted |
+| sender  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  User who submitted a form  |
 | metadata  | true | String | Metadata transitioned with a form  |
 | additionalMetadata  | true | String| Additional metadata transitioned with a form |
 | type  | true | String | "FormSubmitted" value must be filled

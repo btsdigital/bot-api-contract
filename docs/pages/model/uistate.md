@@ -24,9 +24,9 @@ folder: Types
 | showRecordAudioButton | true |  Boolean |-  | Defines whether voice recording is available for a user or not in dialog interface  |
 | showGalleryButton | true |  Boolean | -| Defines whether picking a media from gallery is available for a user or not in dialog interface |
 | showSpeechToTextButton  | true |  Boolean | -| Defines whether speech-to-text function is available for a user or not in dialog interface |
-| replyKeyboard | false |  ReplyCommand |For ReplyCommand type validation see type page  | A list composed of ReplyCommand objects  |
-| quickButtonCommands | false |  QuickButtonCommand |Size of quickButtonCommands should be <=25. For QuickButtonCommand type validation see type page  | A list composed of QuickButtonCommand objects  |
-| formMessage | true |  FormMessage |For FormMessage type validation see FormBuilder docs (web=link)  | FormMessage object  |
+| replyKeyboard | false |  [ReplyCommand](https://btsdigital.github.io/bot-api-contract/replycommand.html) |For ReplyCommand type validation see type page  | A list composed of ReplyCommand objects  |
+| quickButtonCommands | false |  [QuickButtonCommand](https://btsdigital.github.io/bot-api-contract/quickbuttoncommand.html) |Size of quickButtonCommands should be <=25. For QuickButtonCommand type validation see type page  | A list composed of QuickButtonCommand objects  |
+| formMessage | true |  FormMessage |For FormMessage type validation see [FormBuilder](https://btsdigital.github.io/form-builder/) docs   | FormMessage object  |
 
 ## Sample object
 

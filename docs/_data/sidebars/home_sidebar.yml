@@ -1,6 +1,6 @@
 entries:
 - title: Sidebar
-  levels: three
+  levels:
   folders:
   - title: Authorization
     output: web
@@ -122,6 +122,30 @@ entries:
     - title: WebhookInfo
       url: /webhookinfo.html
       output: web
+    - title: Media
+      url: /media.html
+      output: web
+    - title: User
+      url: /user.html
+      output: web
+    - title: Avatar
+      url: /avatar.html
+      output: web
+    - title: Image
+      url: /image.html
+      output: web
+    - title: Contact
+      url: /contact.html
+      output: web
+    - title: Video
+      url: /video.html
+      output: web
+    - title: Audio
+      url: /audio.html
+      output: web
+    - title: Document
+      url: /document.html
+      output: web
   - title: Methods
     output: web
     folderitems:
@@ -131,25 +155,26 @@ entries:
     - title: EditMessage
       url: /EditMessage.html
       output: web
-    - title: DeleteMessage
-      url: /DeleteMessage.html
-      output: web
-    - title: SendContainerMessage
-      url: /SendContainerMessage.html
-      output: web
-    - title: EditContainerMessage
-      url: /EditContainerMessage.html
-      output: web
     - title: SendContactMessage
-      url: /SendContactMessage.html
-    - title: ForwardMessage
-      url: /ForwardMessage.html
       output: web
+      url: /SendContactMessage.html
     - title: SendUiState
       url: /SendUiState.html
       output: web
+    - title: ForwardMessage
+      url: /ForwardMessage.html
+      output: web
+    - title: DeleteMessage
+      url: /DeleteMessage.html
+      output: web
     - title: KickFromGroup
       url: /KickFromGroup.html
+      output: web
+    - title: ChangeGroupTitle
+      url: /ChangeGroupTitle.html
+      output: web
+    - title: ChangeGroupDescription
+      url: /ChangeGroupDescription.html
       output: web
     - title: ChangeGroupAvatar
       url: /ChangeGroupAvatar.html
@@ -157,9 +182,9 @@ entries:
     - title: DeleteGroupAvatar
       url: /DeleteGroupAvatar.html
       output: web
-    - title: ChangeGroupTitle
-      url: /ChangeGroupTitle.html
+    - title: SendContainerMessage
+      url: /SendContainerMessage.html
       output: web
-    - title: ChangeGroupDescription
-      url: /ChangeGroupDescription.html
+    - title: EditContainerMessage
+      url: /EditContainerMessage.html
       output: web

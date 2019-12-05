@@ -1,7 +1,7 @@
 ---
 title: FormClosed
 sidebar: home_sidebar
-keywords: update, form, form closed
+keywords: update, form, form closed, SendUiState
 permalink: formclosed.html
 toc: true
 folder: Types
@@ -9,8 +9,8 @@ folder: Types
 
 ## Description
 
-<p> This object represents update  about form being closed by a user.
-</p>
+ This object represents update  about form (sent within [UiState](https://btsdigital.github.io/bot-api-contract/uistate.html) in [SendUiState method](https://btsdigital.github.io/bot-api-contract/SendUiState.html)) being closed in a client by a user.
+
 
 ## Structure
 
@@ -18,8 +18,8 @@ folder: Types
 |---|:---:|---|---|
 | updateId  | true |String| Backend ID of the update |
 | formId  | true |String| Backend ID of a form |
-| dialog  | true |Peer |  Dialog in which form was closed |
-| sender  | true |Peer |  User who closed a form  |
+| dialog  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  Dialog in which form was closed |
+| sender  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  User who closed a form  |
 | type  | true | String | "FormClosed" value must be filled
 
 ## Sample object

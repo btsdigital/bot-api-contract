@@ -17,8 +17,8 @@ folder: Types
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
 | updateId  | true |String| Backend ID of the update |
-| dialog  | true |Peer |  Dialog in which inline command button was pushed |
-| sender  | true |Peer |  User who pushed inline command button  |
+| dialog  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  Dialog in which inline command button was pushed |
+| sender  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  User who pushed inline command button  |
 | metadata  | true | String |metadata transitioned with inline command for a service to process |
 | content  | true | String |Text of a message sent to a dialog when inline command button was pushed |
 | type  | true | String | "InlineCommandSelected" value must be filled

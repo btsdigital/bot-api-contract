@@ -14,9 +14,9 @@ folder: Commands
 
 ## Description
 
-<p> This method is for editing a message with a type container. 
+<p> This method is for editing container type message. 
 </p>
-<p> On succes empty response with http code 200 is returned.
+On succes empty response with http code 200 is returned.
 
 ## Endpoint
 
@@ -27,7 +27,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 | Variable  | Obligative  | Type| Validation| Description
 |---|:---:|---|---|---|
 | type | true | String | Must be filled with "EditContainerMessage" value |Type of request "EditContainerMessage" |
-| recipient  | true |  Peer | For Peer type validation see type page| Peer  this message was sent to |
+| recipient  | true |  [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) | For Peer type validation see type page| Peer  this message was sent to |
 | content| true |  String |Size of containerMessage.Content should be <= 20000 symbols | Json array to replace original |
 
 ## Sample request
@@ -192,6 +192,13 @@ https://messapi.btsdapps.net/bot/v1/updates/
   ]
 }
 ```
+
+## Updates
+
+<p>This method may asynchronously return following updates:
+</p>
+
+N/A
 
 ## Possible business exceptions
 

@@ -9,37 +9,37 @@ folder: Requests
 
 ## Description
 
-<p> Object represents commands sent. CommandRequest composed of an array of commands.
+<p> Object represents commands to be sent. CommandRequest composed of an array of commands.
 </p>
 <p> Each command has a type repsenting unique set of data.
 </p>
 <p> There are folowing types of commands available:
 <ul>
-<li> <i>SendMessage;</i>
+<li> <i> <a href="https://btsdigital.github.io/bot-api-contract/SendMessage.html">SendMessage</a> ;</i>
 </li>
-<li> <i>EditMessage;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/EditMessage.html">EditMessage</a>;</i>
 </li>
-<li> <i>DeleteMessage;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/DeleteMessage.html">DeleteMessage</a>;</i>
 </li>
-<li> <i>SendContainerMessage;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendContainerMessage.html">SendContainerMessage</a>;</i>
 </li>
-<li> <i>EditContainerMessage;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/EditContainerMessage.html">EditContainerMessage</a>;</i>
 </li>
-<li> <i>SendContactMessage;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendContactMessage.html">SendContactMessage</a>;</i>
 </li>
-<li> <i>ForwardMessage;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/ForwardMessage.html">ForwardMessage</a>;</i>
 </li>
-<li> <i>SendUiState;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendUiState.html">SendUiState</a>;</i>
 </li>
-<li> <i>KickFromGroup;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/KickFromGroup.html">KickFromGroup</a>;</i>
 </li>
-<li> <i>ChangeGroupAvatar;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/ChangeGroupAvatar.html">ChangeGroupAvatar</a>;</i>
 </li>
-<li> <i>DeleteGroupAvatar;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/DeleteGroupAvatar.html">DeleteGroupAvatar</a>;</i>
 </li>
-<li> <i>ChangeGroupTitle;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/ChangeGroupTitle.html">ChangeGroupTitle</a>;</i>
 </li>
-<li> <i>ChangeGroupDescription;</i>
+<li> <i><a href="https://btsdigital.github.io/bot-api-contract/ChangeGroupDescription.html">ChangeGroupDescription</a>;</i>
 </li>
 </ul>
 </p>

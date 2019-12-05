@@ -59,7 +59,10 @@ to restart jekyll when you make changes to the pages, it will be regenerating au
 For using local jekyll instalation:
 
 1) [Install jekyll](https://jekyllrb.com/docs/installation/)
+
 2) Start jekyll
+
+
 ```
 jekyll serve
 ```
