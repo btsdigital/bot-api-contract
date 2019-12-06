@@ -56,7 +56,6 @@ https://messapi.btsdapps.net/bot/v1/updates/
 
 N/A
 
-
 ## Possible business exceptions
 
 <i>Common context
