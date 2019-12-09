@@ -18,8 +18,8 @@ folder: Types
 
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
-| updateId  | true |String| Backend ID of the update |
-| channelId  | true |String| Backend ID of a channel (peer) |
+| updateId  | true |String| Uuid with backend ID of the update |
+| channelId  | true |String| Uuid with backend ID of a channel (peer) |
 | admin  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html)| Channel admin removed |
 | type  | true | String | "ChannelAdminDeleted" value must be filled
 
@@ -29,10 +29,10 @@ folder: Types
 		{
           "updateId" : "bd6cf695-0c13-45fd-b0ff-10f2a7504865",
           "type" : "ChannelAdminDeleted",
-          "channelId" : "2ea63185-01b4-40ae-b225-1c8d87efdda2",
+          "channelId" : "Uuid_value",
           "admin" : {
             "type" : "USER",
-            "id" : "5d8df81e-e280-480a-b165-7e68c36308c3",
+            "id" : "Uuid_value",
             "username" : "TestUserName",
             "lastName" : "TestlastName",
             "firstName" : "TestfirstName"

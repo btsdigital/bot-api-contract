@@ -50,7 +50,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
          "content":"Hello",
          "recipient":{  
             "type":"USER",
-            "id":"ga018bae-e3e7-11e8-a458-7a609eaf8200"
+            "id":"Uuid_value"
          }
       }
    ]

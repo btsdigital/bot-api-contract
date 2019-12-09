@@ -19,7 +19,7 @@ Object represents contact data.
 | Variable  | Obligative  | Type| Validation| Description
 |---|:---:|---|---|---|
 | contactType | true | String | Must be filled with "InputRegisteredContact" value |Type of contact |
-| userId | true | String | - |Backend ID of of a registered user |
+| userId | true | String | - |Uuid with backend ID of of a registered user |
 | firstName | false |  String |-  | Registered user's first name |
 | lastName  | false |  String | -| Registered user's last name |
 | phoneNumber  | false |  String | -| Registered user's phone number |
@@ -37,9 +37,9 @@ Object represents contact data.
 ```
 
 		"inputMedia": {
-                            "firstName": "Болатбек Кадыров",
+                            "firstName": "Alexandr",
                             "lastName": "",
-                            "phoneNumber": "77476589238",
+                            "phoneNumber": "7**********",
                             "contactType": "InputUnregisteredContact"
                         }
 	

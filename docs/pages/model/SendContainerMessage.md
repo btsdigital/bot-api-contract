@@ -45,7 +45,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
       "localId": "54353",
       "recipient": {
         "type": "GROUP",
-        "id": "0fab26f9-f181-11e9-882c-f22cfe20c1ac"
+        "id": "Uuid_value"
       },
       "content":"[
         {
@@ -71,8 +71,8 @@ https://messapi.btsdapps.net/bot/v1/updates/
                   \"type\": \"image\",
                   \"file_metadata\": {
                     \"file_type\": \"image\",
-                    \"file_id\": \"d3dabf08-628e-11e9-9c83-a6e4404dda13\",
-                    \"filename\": \"2962290980\"
+                    \"file_id\": \"Uuid_value\",
+                    \"filename\": \"9902290980\"
                   },
                   \"options\": {
                     \"width\": 62,
@@ -115,12 +115,12 @@ https://messapi.btsdapps.net/bot/v1/updates/
                       \"type\": \"image\",
                       \"file_metadata\": {
                         \"file_type\": \"image\",
-                        \"file_id\": \"670c4aa1-628f-11e9-b991-9ab80caa3f4c\",
-                        \"filename\": \"4014567986\"
+                        \"file_id\": \"Uuid_value\",
+                        \"filename\": \"4804567986\"
                       },
                       \"form_action\": {
                         \"action\": \"send_message\",
-                        \"data_template\": \"lolka50\"
+                        \"data_template\": \"tolkat50\"
                       },
                       \"options\": {
                         \"width\": 17,
@@ -236,7 +236,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 <ul>
   <li> Sending container message to a channel is not available if a channel wasn't found (deleted/ID error) or channel was banned;
   </li>
-  <li>Sending container message to a channel is not available if a service is not a channel subscriber and has no administrator/owner role assigned and WRITE permission assigned;
+  <li>Sending container message to a channel is not available if a service is not a channel subscriber and has no administrator/owner role assigned and permission to write;
   </li>
 </ul>
 </p>

@@ -40,8 +40,8 @@ https://messapi.btsdapps.net/bot/v1/updates/
    "commands":[  
       {  
          "type":"ChangeGroupDescription",
-         "groupId":"0fhf26f9-f181-11e9-66782c-f22cgH20c1jc",
-         "description":"Make America great again"
+         "groupId":"Uuid_value",
+         "description":"The greatest group"
       }
    ]
 }
@@ -62,7 +62,7 @@ N/A
 <ul>
 <li> Changing group description isn't available if a group dialog wasn't found (deleted/ID error);
 </li>
-<li> Changing group description  isn't available if service isn't a group owner/admin with BOT_EDIT_PROFILE permission;
+<li> Changing group description  isn't available if service isn't a group owner/admin with permission to edit profile;
 </li>
 </ul>
 </p>

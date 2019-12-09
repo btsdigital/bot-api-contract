@@ -38,10 +38,10 @@ https://messapi.btsdapps.net/bot/v1/updates/
    "commands":[  
       {  
          "type":"KickFromGroup",
-         "groupId":"0fab26f9-y181-11e9-882c-f22cfe20c1ac",
+         "groupId":"Uuid_value",
          "peerToKick":{  
             "type":"USER",
-            "id":"ga018bae-e3e7-11e8-a458-7a609eaf8200"
+            "id":"Uuid_value"
          }
       }
    ]
@@ -67,7 +67,7 @@ N/A
 </li>
 <li> Removing a peer (user/service) from group isn't available if peer is a group owner or admin;
 </li>
-<li> Removing a peer (user/service) from group isn't available if service isn't a group owner and admin with BOT_DELETE_MEMBER permission ;
+<li> Removing a peer (user/service) from group isn't available if service isn't a group owner and admin with permission to delete ;
 </li>
 </ul>
 </p>

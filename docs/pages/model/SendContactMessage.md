@@ -45,12 +45,12 @@ https://messapi.btsdapps.net/bot/v1/updates/
          "localId":"54353",
          "recipient":{  
             "type":"GROUP",
-            "id":"0fhf26f9-f181-11e9-66782c-f22cgH20c1jc"
+            "id":"Uuid_value"
          },
          "inputMedia":{  
-            "firstName":"Болатбек Кадыров",
+            "firstName":"Alexandr",
             "lastName":"",
-            "phoneNumber":"77476589238",
+            "phoneNumber":"7**********",
             "contactType":"InputUnregisteredContact"
          }
       }
@@ -86,7 +86,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 <ul>
   <li> Sending contact message to a channel is not available if a channel wasn't found (deleted/ID error) or channel was banned;
   </li>
-  <li>Sending contact message to a channel is not available if a service is not a channel subscriber and has no administrator/owner role assigned with a WRITE permission;
+  <li>Sending contact message to a channel is not available if a service is not a channel subscriber and has no administrator/owner role assigned with permission to write;
   </li>
   </ul>
   </p>

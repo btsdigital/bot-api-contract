@@ -33,7 +33,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 |---|:---:|---|---|---|
 | type | true | String | Must be filled with "ChangeGroupAvatar" value |Type of request "ChangeGroupAvatar" |
 | groupId  | true |  String | groupId must be a valid UUID| String for specifying ID of a group dialog to change avatar of |
-| fileId  | true |  String | -| String for specifying file ID which has already been uploaded as an avatar (web-link for upload avatar method) |
+| fileId  | true |  String |groupId must be a valid UUID| String for specifying file ID which has already been uploaded as an avatar ([uploadAvatar]()) |
 
 ## Sample request
 
@@ -42,8 +42,8 @@ https://messapi.btsdapps.net/bot/v1/updates/
    "commands":[  
       {  
          "type":"ChangeGroupAvatar",
-         "groupId":"0fhf26f9-f181-11e9-66782c-f22cgH20c1jc",
-         "fileId":"e7t9a4df-f695-16e9-a15e-f6780cfg605e9"
+         "groupId":"Uuid_value",
+         "fileId":"Uuid_value"
       }
    ]
 }
@@ -66,7 +66,7 @@ N/A
 </li>
 <li> Changing group avatar isn't available if media file according to fileId specified wasn't found (for this method avatar fileId required);
 </li>
-<li> Changing group avatar  isn't available if service isn't a group owner/admin with BOT_EDIT_PROFILE permission ;
+<li> Changing group avatar  isn't available if service isn't a group owner/admin with permission to edit profile ;
 </li>
 </ul>
 </p>

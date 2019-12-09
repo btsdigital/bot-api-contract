@@ -16,16 +16,16 @@ folder: Types
 
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
-| updateId  | true |String| Backend ID of the update |
-| channelId  | true |String| Backend ID of a channel (peer) |
+| updateId  | true |String| Uuid with backend ID of the update |
+| channelId  | true |String| Uuid with backend ID of a channel (peer) |
 | type  | true | String | "ChannelPermissionsRevoked" value must be filled
 
 ## Sample object
 
 ```
 		{
-          "updateId" : "95828600-d345-4822-a72a-4bbbd3365a2e",
+          "updateId" : "Uuid_value",
           "type" : "ChannelPermissionsRevoked",
-          "channelId" : "26e46ff4-12a9-4a27-b0d6-b818efecc6a3"
+          "channelId" : "Uuid_value"
         }
 ```

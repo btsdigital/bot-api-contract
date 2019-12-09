@@ -18,23 +18,23 @@ folder: Types
 
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
-| updateId  | true |String| Backend ID of the update |
+| updateId  | true |String| Uuid with backend ID of the update |
 | localId  | true |String |  Service ID of the message |
 | dialog  | true | [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |Recipient of a message |
-| id  | true | String| Backend ID of the message |
+| id  | true | String| Uuid with backend ID of the message |
 | type  | true | String | "MessageIdAssigned" value must be filled
 
 ## Sample object
 
 ```
                 {
-                    "updateId": "8e84a6d0-0606-11ea-ab51-7b65bf81d89e",
+                    "updateId": "Uuid_value",
                     "localId": "54353",
                     "dialog": {
-                        "id": "ba017bae-e3e8-11e8-b418-7a609eaf8200",
+                        "id": "Uuid_value",
                         "type": "USER"
                     },
-                    "id": "8e73ddf0-0606-11ea-a404-dabd23db7be6",
+                    "id": "Uuid_value",
                     "type": "MessageIdAssigned"
                 }
 ```

@@ -28,7 +28,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 | Variable  | Obligative  | Type| Validation| Description
 |---|:---:|---|---|---|
 | type | true | String | Must be filled with "EditMessage" value |Type of request "EditMessage" |
-| messageId | true |  String |Value must be a valid Time UUID  | Backend ID of a message to edit  |
+| messageId | true |  String |Value must be a valid UUID  | Backend ID of a message to edit  |
 | recipient  | true |  [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) | For Peer type validation see type page| Peer message to edit was sent to |
 | content| true |  String |Content length should be <= 4096  | Text of a message to replace original  |
 | inlineCommands  | false | List of [InlineCommand](https://btsdigital.github.io/bot-api-contract/inlinecommand.html)  | Number of inlineCommands should be <= 8, recommended number is 3. For inlineCommand type validation see type page | List of InlineCommands   (list of buttons that will be displayed on Messenger UI inside the message). Currently this is deprecated, use inlineCommandRows
@@ -44,10 +44,10 @@ https://messapi.btsdapps.net/bot/v1/updates/
       {  
          "type":"EditMessage",
          "content":"text",
-         "messageId":"f6ac7c40-f0a5-11e9-8df3-7891f08e86g6",
+         "messageId":"Uuid_value",
          "recipient":{  
             "type":"USER",
-            "id":"ba018bae-e3e8-11e8-b418-7a609eaf8200"
+            "id":"Uuid_value"
          }
       }
    ]

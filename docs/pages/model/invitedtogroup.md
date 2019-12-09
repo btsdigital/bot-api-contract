@@ -16,16 +16,16 @@ folder: Types
 
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
-| updateId  | true |String| Backend ID of the update |
-| groupId  | true |String| Backend ID of a group dialog (peer) |
+| updateId  | true |String| Uuid with backend ID of the update |
+| groupId  | true |String| Uuid with backend ID of a group dialog (peer) |
 | type  | true | String | "InvitedToGroup" value must be filled
 
 ## Sample object
 
 ```
                {
-                 "updateId" : "d0c71b68-f677-47bb-90d5-0456b346d63c",
+                 "updateId" : "Uuid_value",
                  "type" : "InvitedToGroup",
-                 "groupId" : "92dee053-378c-47f9-bdac-06714f722bbf"
+                 "groupId" : "Uuid_value"
                }
 ```

@@ -9,7 +9,7 @@ folder: Types
 
 ## Description
 
-<p> This object represents a user, service, group dialog or channel.
+<p> This object represents particular user, service, group dialog or channel.
 </p>
 
 ## User
@@ -53,7 +53,7 @@ folder: Types
 
 		{
 			"type": "USER",
-			"id": "ga018bae-e3e7-11e8-a458-7a609eaf8200",
+			"id": "Uuid_value",
 			 "username" :  "test_username",
 			 "lastName":  "test_lastName",
 			 "firstName":  "test_firstName"

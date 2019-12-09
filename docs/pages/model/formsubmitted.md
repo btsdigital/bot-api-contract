@@ -16,8 +16,8 @@ folder: Types
 
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
-| updateId  | true |String| Backend ID of the update |
-| formId  | true |String| Backend ID of a form |
+| updateId  | true |String| Uuid with backend ID of the update |
+| formId  | true |String| Uuid with backend ID of a form |
 | dialog  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  Dialog in which form was submitted |
 | sender  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  User who submitted a form  |
 | metadata  | true | String | Metadata transitioned with a form  |
@@ -28,19 +28,19 @@ folder: Types
 
 ```
                {
-                 "updateId" : "235789af-9f48-448b-b711-432f18f1d6b1",
+                 "updateId" : "Uuid_value",
                  "type" : "FormSubmitted",
-                 "formId" : "56d889a7-c40b-4fbc-be1b-2a4fbffe1558",
+                 "formId" : "Uuid_value",
                  "dialog" : {
                    "type" : "USER",
-                   "id" : "3a17518d-63d4-4d63-9c46-9c312588779a",
+                   "id" : "Uuid_value",
                    "username" : "TestUserName",
                    "lastName" : "TestlastName",
                    "firstName" : "TestfirstName"
                  },
                  "sender" : {
                    "type" : "USER",
-                   "id" : "3a17518d-63d4-4d63-9c46-9c312588779a",
+                   "id" : "Uuid_value",
                    "username" : "TestUserName",
                    "lastName" : "TestlastName",
                    "firstName" : "TestfirstName"

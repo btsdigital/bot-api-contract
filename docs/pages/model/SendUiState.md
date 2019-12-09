@@ -40,11 +40,11 @@ https://messapi.btsdapps.net/bot/v1/updates/
  	 	"type": "SendUiState",
  	 	"recipient": {
  	 		"type": "USER",
- 	 		"id": "ga018bae-e3e7-11e8-a458-7a609eaf8200"
+ 	 		"id": "Uuid_value"
  	 	},
  	 	"dialog": {
  	 		"type": "USER",
- 	 		"id": "ga018bae-e3e7-11e8-a458-7a609eaf8200"
+ 	 		"id": "Uuid_value"
  	 	},
  	 	"uiState": {
  	 		"canWriteText": true,
@@ -87,7 +87,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
  	 			{
  		 			"caption":"Call me maybe",
  		 			"action":"QUICK_FORM_ACTION",
- 		 			"metadata":"{\r\n   \"action\" : \"redirect_call\",\r\n   \"data_template\" : \"+77072771478\"\r\n}"
+ 		 			"metadata":"{\r\n   \"action\" : \"redirect_call\",\r\n   \"data_template\" : \"+7**********\"\r\n}"
  	 			}
  	 			
  	 		],
@@ -150,7 +150,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 <ul>
   <li> Sending UI state to a channel isn't available if a channel wasn't found (deleted/ID error) or channel was banned;
   </li>
-  <li>Sending UI stat to a channel isn't available if a service is not a channel subscriber and has no administrator/owner role assigned and WRITE permission assigned;
+  <li>Sending UI stat to a channel isn't available if a service is not a channel subscriber and has no administrator/owner role assigned and permission to write;
   </li>
 </ul>
 </p>

@@ -27,7 +27,7 @@ folder: Types
 
 		"InlineCommand": {
 			"caption": "Get stats",
-			"metadata": "commandgetstats::ga018bae-e3e7-11e8-a458-7a609eaf8200"
+			"metadata": "commandgetstats::ha018bae-t6e7-11e0-a458-7a629eaf8200"
 		}
 	
 ```
