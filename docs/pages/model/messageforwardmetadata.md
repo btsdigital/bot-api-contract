@@ -26,7 +26,7 @@ folder: Types
         {
           "sender" : {
             "type" : "USER",
-            "id" : "97e9b4a5-64d6-4303-9950-94ef4a4bee5d",
+            "id" : "Uuid_value",
             "username" : "TestUsername",
             "lastName" : "TestlastName",
             "firstName" : "TestfirstName"

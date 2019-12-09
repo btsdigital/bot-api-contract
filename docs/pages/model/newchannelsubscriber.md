@@ -18,24 +18,24 @@ folder: Types
 
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
-| updateId  | true |String| Backend ID of the update |
+| updateId  | true |String| Uuid with backend ID of the update |
 | peer  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html)| New channel subcriber |
-| channelId  | true |String| Backend ID of a channel (peer) |
+| channelId  | true |String| Uuid with backend ID of a channel (peer) |
 | type  | true | String | "NewChannelSubscriber" value must be filled
 
 ## Sample object
 
 ```
                 {
-                  "updateId" : "e7b8b8c2-7835-40c7-bac6-5a242ae291f9",
+                  "updateId" : "Uuid_value",
                   "type" : "NewChannelSubscriber",
                   "peer" : {
                     "type" : "USER",
-                    "id" : "a3474872-0a2e-4b3e-af6a-7fd710ecb26f",
+                    "id" : "Uuid_value",
                     "username" : "TestUserName",
                     "lastName" : "TestLastName",
                     "firstName" : "TestFirstName"
                   },
-                  "channelId" : "d3080695-5d31-48ef-9435-dd7c9eeab48a"
+                  "channelId" : "Uuid_value"
                 }
 ```

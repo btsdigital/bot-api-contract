@@ -16,12 +16,12 @@ folder: Types
 
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
-| updateId  | true |String| Backend ID of the update |
-| formId  | true |String| Backend ID of a form |
+| updateId  | true |String| Uuid with backend ID of the update |
+| formId  | true |String| Uuid with backend ID of a form |
 | dialog  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  Dialog in which form was submitted |
 | sender  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  User who submitted a form  |
 | message  | true |String |  Text of a message  |
-| messageId  | true |String |  Backend ID of a message  |
+| messageId  | true |String |  Uuid with backend ID of a message  |
 | additionalMetadata  | true | String| Additional metadata about sent message |
 | type  | true | String | "FormMessageSent" value must be filled
 
@@ -29,19 +29,19 @@ folder: Types
 
 ```
                {
-                           "updateId": "f8095479-d7a6-4122-b4e1-f670b058069f",
+                           "updateId": "Uuid_value",
                            "formId": "",
                            "dialog": {
-                               "id": "3a17518d-63d4-4d63-9c46-9c312588779a",
+                               "id": "Uuid_value",
                                "type": "USER"
                            },
                            "sender": {
-                               "id": "3a17518d-63d4-4d63-9c46-9c312588779a",
+                               "id": "Uuid_value",
                                "type": "USER"
                            },
-                           "message": "+77057252478",
-                           "messageId": "556c0421-1299-11ea-9b4c-02af8e11935e",
-                           "additionalMetadata": "{\"data_template_result\":\"77057252478\",\"private_data\":{\"value\":{\"phone_number\":\"+77077221478\",\"metadata\":\"XXX\"}},\"hidden_metadata\":\"\"}",
+                           "message": "+7**********",
+                           "messageId": "Uuid_value",
+                           "additionalMetadata": "{\"data_template_result\":\"7**********\",\"private_data\":{\"value\":{\"phone_number\":\"+77077221478\",\"metadata\":\"XXX\"}},\"hidden_metadata\":\"\"}",
                            "type": "FormMessageSent"
                        }
 ```

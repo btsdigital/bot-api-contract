@@ -41,9 +41,9 @@ https://messapi.btsdapps.net/bot/v1/updates/
          "type":"DeleteMessage",
          "dialog":{  
             "type":"USER",
-            "id":"ba017bеe-e3e8-11e8-b478-7a609eaf8100"
+            "id":"Uuid_value"
          },
-         "messageId":"4d52rc40-f0df-11h9-8df3-7791f08e86c6"
+         "messageId":"Uuid_value"
       }
    ]
 }
@@ -102,7 +102,7 @@ N/A
 <i>Service to group dialog</i>
 <p>
 <ul>
-<li>Service isn't able to delete a message sent to a group dialog is it's not a member of this group and has no administrator role and BOT_DELETE_MESSAGE permission assigned;
+<li>Service isn't able to delete a message sent to a group dialog is it's not a member of this group and has no administrator role and  permission to delete;
 </li>
 <li>Service isn't able to delete message in a group if it was sent more than 2 days ago.
 </li>

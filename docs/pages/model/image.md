@@ -32,7 +32,7 @@ folder: Types
 ```
 {  
       "type":"Image",
-      "fileId":"361a63f1-abbd-4026-b4fb-96e1d70c5bd1",
+      "fileId":"Uuid_value",
       "mimeType":"JPEG",
       "name":"test_avatar.jpeg",
       "size":1024,

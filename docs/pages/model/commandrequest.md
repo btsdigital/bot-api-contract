@@ -57,12 +57,12 @@ folder: Requests
    "commands":[  
       {  
          "type":"ChangeGroupDescription",
-         "groupId":"0fhf26f9-f181-11e9-66782c-f22cgH20c1jc",
-         "description":"Make America great again"
+         "groupId":"Uuid_value",
+         "description":"New description"
       },
       {  
          "type":"ChangeGroupTitle",
-         "groupId":"0fhf26f9-f181-11e9-66782c-f22cgH20c1jc",
+         "groupId":"Uuid_value",
          "title":"New title"
       }
    ]

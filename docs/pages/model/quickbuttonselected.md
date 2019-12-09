@@ -15,7 +15,7 @@ This object represents update about selected quick button. This type of update i
 
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
-| updateId  | true |String| Backend ID of the update |
+| updateId  | true |String| Uuid with backend ID of the update |
 | dialog  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  Dialog in which quick button was pushed |
 | sender  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  User who pushed quick button  |
 | metadata  | true | String |metadata transitioned with quick button for a service to process |
@@ -25,18 +25,18 @@ This object represents update about selected quick button. This type of update i
 
 ```
                {
-                 "updateId" : "20a8dd0a-7c29-4df9-bfc0-e5d8288d2a8d",
+                 "updateId" : "Uuid_value",
                  "type" : "QuickButtonSelected",
                  "dialog" : {
                    "type" : "USER",
-                   "id" : "c81be0d0-2eb0-479e-a7a4-4568e8764509",
+                   "id" : "Uuid_value",
                    "username" : "TestUserName",
                    "lastName" : "TestLastName",
                    "firstName" : "TestFirstName"
                  },
                  "sender" : {
                    "type" : "USER",
-                   "id" : "d2a1dcb7-ea11-433f-a62a-eb71b06881ce",
+                   "id" : "Uuid_value",
                    "username" : "TestUserName",
                    "lastName" : "TestLastName",
                    "firstName" : "TestFirstName"

@@ -37,10 +37,10 @@ https://messapi.btsdapps.net/bot/v1/updates/
   "commands": [
     {
       "type": "EditContainerMessage",
-      "messageId": "f6ac7c40-f0a5-11e9-8df3-7891f08e86g6",
+      "messageId": "Uuid_value",
       "recipient": {
         "type": "GROUP",
-        "id": "0fab26f9-f181-11e9-882c-f22cfe20c1ac"
+        "id": "Uuid_value"
       },
       "content":"[
         {
@@ -66,8 +66,8 @@ https://messapi.btsdapps.net/bot/v1/updates/
                   \"type\": \"image\",
                   \"file_metadata\": {
                     \"file_type\": \"image\",
-                    \"file_id\": \"d3dabf08-628e-11e9-9c83-a6e4404dda13\",
-                    \"filename\": \"2962290980\"
+                    \"file_id\": \"Uuid_value\",
+                    \"filename\": \"3762290980\"
                   },
                   \"options\": {
                     \"width\": 62,
@@ -110,12 +110,12 @@ https://messapi.btsdapps.net/bot/v1/updates/
                       \"type\": \"image\",
                       \"file_metadata\": {
                         \"file_type\": \"image\",
-                        \"file_id\": \"670c4aa1-628f-11e9-b991-9ab80caa3f4c\",
-                        \"filename\": \"4014567986\"
+                        \"file_id\": \"Uuid_value\",
+                        \"filename\": \"3454567986\"
                       },
                       \"form_action\": {
                         \"action\": \"send_message\",
-                        \"data_template\": \"lolka50\"
+                        \"data_template\": \"tolkat50\"
                       },
                       \"options\": {
                         \"width\": 17,

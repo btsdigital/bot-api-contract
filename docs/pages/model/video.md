@@ -34,7 +34,7 @@ folder: Types
 ```
 {  
       "type":"Video",
-      "fileId":"361a63f1-abbd-4026-b4fb-96e1d70c5bd1",
+      "fileId":"Uuid_value",
       "name":"test.mp4",
       "mimeType":"MP4",
       "size":1024,

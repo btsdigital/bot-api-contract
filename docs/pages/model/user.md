@@ -16,7 +16,7 @@ folder: Types
 
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
-| id  | true |String| Backend ID of a user |
+| id  | true |String| Uuid with backend ID of a user |
 | firstName  | false |String |  User's first name |
 | lastName  | false |String|  User's first name |
 | phoneNumber  | false | |  User's phone number  |
@@ -28,15 +28,15 @@ folder: Types
 
 ```
         {
-          "id" : "f1a6b389-40e2-4318-adbc-3b38c57bf1f4",
+          "id" : "Uuid_value",
           "firstName" : "Alex",
           "lastName" : "Key",
-          "phoneNumber" : "+77077661234",
+          "phoneNumber" : "+7**********",
           "userName" : "@test",
           "avatar" : {
             "full" : {
               "type" : "Image",
-              "fileId" : "361a63f1-abbd-4026-b4fb-96e1d70c5bd1",
+              "fileId" : "Uuid_value",
               "mimeType" : "JPEG",
               "name" : "test_avatar.jpeg",
               "size" : 1024,
@@ -45,7 +45,7 @@ folder: Types
             },
             "small" : {
               "type" : "Image",
-              "fileId" : "382f03e6-12cd-4ef4-a88e-95a4ad05d350",
+              "fileId" : "Uuid_value",
               "mimeType" : "JPEG",
               "name" : "test_avatar_small.jpeg",
               "size" : 1024,

@@ -21,8 +21,8 @@ New message might be sent by user directly or through the use of [ReplyCommand](
 
 | Variable  | Obligative  |Type| Description
 |---|:---:|---|---|
-| updateId  | true |String| Backend ID of the update |
-| messageId  | true |String |  Backend ID of the message |
+| updateId  | true |String| Uuid with backend ID of the update |
+| messageId  | true |String |  Uuid with backend ID of the message |
 | sentAt  | true |ZonedDateTime|  Time and date of sending a message |
 | author  | true |[Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |  Sender of a message  |
 | dialog  | true | [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) |Recipient of a message |
@@ -39,32 +39,32 @@ New message might be sent by user directly or through the use of [ReplyCommand](
 
 ```
         {
-          "updateId" : "de07d839-1492-4d29-8bd5-4d4f73e599e6",
+          "updateId" : "Uuid_value",
           "type" : "Message",
-          "messageId" : "ef4a8b9a-2131-453f-8cf8-17f228f0b4fe",
+          "messageId" : "Uuid_value",
           "sentAt" : "2019-11-12T15:11:00.199Z",
           "author" : {
             "type" : "USER",
-            "id" : "1019713e-b2d7-46b2-a6ec-743b0f3c8687",
+            "id" : "Uuid_value",
             "username" : "TestUsername",
             "lastName" : "TestlastName",
             "firstName" : "TestfirstName"
           },
           "dialog" : {
             "type" : "GROUP",
-            "id" : "a930b4b4-1520-417a-aaef-7ff52bd8cd25",
+            "id" : "Uuid_value",
             "name" : "Toi"
           },
           "content" : "Hello",
           "forwardMetadata" : {
             "sender" : {
               "type" : "USER",
-              "id" : "e77d1dc7-4ecd-46c3-9ee4-74cd773763d6"
+              "id" : "Uuid_value"
             }
           },
           "media" : [ {
             "type" : "Image",
-            "fileId" : "610a225e-59e4-4661-b488-d40491c19122",
+            "fileId" : "Uuid_value",
             "mimeType" : "1234",
             "name" : "test",
             "size" : 100,

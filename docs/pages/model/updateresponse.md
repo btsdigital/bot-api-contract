@@ -67,18 +67,18 @@ folder: Updates
 		{
             "updates": [
                 {
-                    "updateId": "188383d0-0448-11ea-ab51-7b78bf81d89e",
-                    "messageId": "18600f06-0448-11ea-ab3f-d6e38872fb41",
+                    "updateId": "Uuid_value",
+                    "messageId": "Uuid_value",
                     "sentAt": "2019-11-11T05:57:08.132Z",
                     "author": {
-                        "id": "ba017bae-e3e8-11e8-b418-7a609eaf8200",
+                        "id": "Uuid_value",
                         "username": "alehandro",
                         "lastName": "nanbar",
                         "firstName": "geeky geck",
                         "type": "USER"
                     },
                     "dialog": {
-                        "id": "0fab26f9-y181-11e9-882c-f22cfe20c1ac",
+                        "id": "Uuid_value",
                         "type": "USER"
                     },
                     "content": "test1",
@@ -91,18 +91,18 @@ folder: Updates
                     "type": "Message"
                 },
                 {
-                    "updateId": "18600f06-0448-11ea-ab3f-d6e38872fb41",
-                    "messageId": "1a5dd0fd-0448-11ea-a21b-7a609eaf8200",
+                    "updateId": "Uuid_value",
+                    "messageId": "Uuid_value",
                     "sentAt": "2019-11-11T05:57:11.473Z",
                     "author": {
-                        "id": "ga018bae-e3e7-11e8-a458-7a609eaf8200",
+                        "id": "Uuid_value",
                         "username": "alehandro",
                         "lastName": "nanbar",
                         "firstName": "geeky geck",
                         "type": "USER"
                     },
                     "dialog": {
-                        "id": "0fab26f9-y181-11e9-882c-f22cfe20c1ac",
+                        "id": "Uuid_value",
                         "type": "USER"
                     },
                     "content": "test2",

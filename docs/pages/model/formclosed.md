@@ -28,15 +28,15 @@ folder: Types
                {
                  "updateId" : "e7377c24-d975-4e5b-b4f7-b1aeaa12b243",
                  "type" : "FormClosed",
-                 "formId" : "80f3d865-0210-4604-8c57-b959b9423a00",
+                 "formId" : "Uuid_value",
                  "dialog" : {
                    "type" : "GROUP",
-                   "id" : "e3158a4a-1f92-41d2-b991-7ee95bed3918",
+                   "id" : "Uuid_value",
                    "name" : "Aitu"
                  },
                  "sender" : {
                    "type" : "USER",
-                   "id" : "3a17518d-63d4-4d63-9c46-9c312588779a",
+                   "id" : "Uuid_value",
                    "username" : "TestUserName",
                    "lastName" : "TestlastName",
                    "firstName" : "testfirstName"
