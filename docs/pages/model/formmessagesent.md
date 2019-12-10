@@ -41,7 +41,7 @@ folder: Types
                            },
                            "message": "+7**********",
                            "messageId": "Uuid_value",
-                           "additionalMetadata": "{\"data_template_result\":\"7**********\",\"private_data\":{\"value\":{\"phone_number\":\"+77077221478\",\"metadata\":\"XXX\"}},\"hidden_metadata\":\"\"}",
+                           "additionalMetadata": "{\"data_template_result\":\"7**********\",\"private_data\":{\"value\":{\"phone_number\":\"7**********\",\"metadata\":\"XXX\"}},\"hidden_metadata\":\"\"}",
                            "type": "FormMessageSent"
                        }
 ```

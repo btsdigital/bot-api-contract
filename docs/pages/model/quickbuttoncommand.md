@@ -161,7 +161,7 @@ For this action service gets  [FormMessageSent](https://btsdigital.github.io/bot
  	 			{
  		 			"caption":"Send message",
  		 			"action":"QUICK_FORM_ACTION",
- 		 			"metadata":"{\r\n   \"action\" : \"send_message\",\r\n   \"data_template\" : \"В начале было слово\"\r\n}"
+ 		 			"metadata":"{\r\n   \"action\" : \"send_message\",\r\n   \"data_template\" : \"Yes, you can!\"\r\n}"
  	 			},
  	 			{
  		 			"caption":"Share text",
@@ -176,7 +176,7 @@ For this action service gets  [FormMessageSent](https://btsdigital.github.io/bot
  	 			{
  		 			"caption":"Call me maybe",
  		 			"action":"QUICK_FORM_ACTION",
- 		 			"metadata":"{\r\n   \"action\" : \"redirect_call\",\r\n   \"data_template\" : \"+77072771478\"\r\n}"
+ 		 			"metadata":"{\r\n   \"action\" : \"redirect_call\",\r\n   \"data_template\" : \"+7**********\"\r\n}"
  	 			}
  	 			
  	 		]
