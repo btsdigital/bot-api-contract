@@ -29,7 +29,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 |---|:---:|---|---|---|
 | type | true | String | Must be filled with "SendUiState" value |Type of request "SendUiState" |
 | recipient  | true |  [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) | For Peer type validation see type page| Peer-actor  to send UI state to |
-| toDialog  | true |  [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) | For Peer type validation see type page| Peer-dialog may contain Peer-actor (otherwise recipient=toDialog) to send UI state to |
+| dialog  | true |  [Peer](https://btsdigital.github.io/bot-api-contract/peer.html) | For Peer type validation see type page| Peer-dialog may contain Peer-actor (otherwise recipient=toDialog) to send UI state to |
 | uiState | true |  [UiState](https://btsdigital.github.io/bot-api-contract/uistate.html) |For UiState type validation see type page  | UI state object describing UI configuration  |
 
 ## Sample request
