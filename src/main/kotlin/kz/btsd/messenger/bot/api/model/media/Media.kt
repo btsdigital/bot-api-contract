@@ -8,7 +8,7 @@ import io.swagger.annotations.ApiModelProperty
 @ApiModel(
     description = "Media represents media file of video, audio, image, e.t.c",
     discriminator = "type",
-    subTypes = [Video::class, Audio::class, Image::class, Document::class, Contact::class]
+    subTypes = [Video::class, Audio::class, Image::class, Document::class, Contact::class, Music::class, Gif::class]
 )
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.EXISTING_PROPERTY, property = "type", visible = true)
 @JsonSubTypes(value = [
@@ -16,7 +16,9 @@ import io.swagger.annotations.ApiModelProperty
     JsonSubTypes.Type(value = Audio::class, name = "Audio"),
     JsonSubTypes.Type(value = Image::class, name = "Image"),
     JsonSubTypes.Type(value = Document::class, name = "Document"),
-    JsonSubTypes.Type(value = Contact::class, name = "Contact")
+    JsonSubTypes.Type(value = Contact::class, name = "Contact"),
+    JsonSubTypes.Type(value = Music::class, name = "Music"),
+    JsonSubTypes.Type(value = Gif::class, name = "Gif")
 ])
 open class Media(
     @ApiModelProperty(
