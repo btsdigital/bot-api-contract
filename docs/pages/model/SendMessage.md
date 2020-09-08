@@ -40,6 +40,7 @@ https://messapi.btsdapps.net/bot/v1/updates/
 | inlineCommandRows  | false |List of [InlineCommand](https://btsdigital.github.io/bot-api-contract/inlinecommand.html) lists | Table should not have more than 25 rows, 25 columns|List containing lists of InlineCommands (Table of buttons that will be displayed on Messenger UI inside the message)|
 | uiState  | false | [UiState](https://btsdigital.github.io/bot-api-contract/uistate.html) |For uiState type validation see type page |Bot Ui State buttons with ReplyKeyboard and QuickButtons  |
 | mediaList  | false | List of [InputMedia](https://btsdigital.github.io/bot-api-contract/inputmedia.html)  |mediaList size should be <= 100 |List of InputMedia. Media content to be showed in a message |
+| silentMode  | false | Boolean  |-  |Flag indicating is there need to send message in silent mode |
 
 ## Sample request
 ```
