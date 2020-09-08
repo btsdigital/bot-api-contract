@@ -51,7 +51,10 @@ data class SendMessage(
 
     @ApiModelProperty(notes = "List of media")
     @get:MediaList
-    val mediaList: List<InputMedia> = emptyList()
+    val mediaList: List<InputMedia> = emptyList(),
+
+    @ApiModelProperty(notes = "Flag indicating is there need to send message in silent mode")
+    val silentMode: Boolean = false
 ) : Command("SendMessage") {
     @get:Valid
     val flatCommandRows: List<InlineCommand>
