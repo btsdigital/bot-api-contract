@@ -11,7 +11,7 @@ folder: Requests
 
 <p> All requests should be sent to proper endpoints.
 </p>
-<p> Endpoint <b> "https:/botapi.btsdapps.net/bot/v1/updates/" </b> is used for the following methods:
+<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/updates/" </b> is used for the following methods:
 
 <ul>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/retrieveUpdate.html">retrieveUpdate</a>;</i>
@@ -72,7 +72,7 @@ folder: Requests
 <p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/user/{userId}/avatar/" </b> is used for the <i><a href="">getAvatars</a></i> method. It's neccesarry to put peer Id of a user instead of  {userId} value in a endpoint string. 
 </p>
 
-<p> Endpoint <b> "/https://botapi.btsdapps.net/bot/v1/webhook/" </b> is used for the following methods:
+<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/webhook/" </b> is used for the following methods:
 <ul>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/getwebhookinfo.html">getWebhookInfo;</a></i>
 </li>
