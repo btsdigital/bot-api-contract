@@ -19,7 +19,7 @@ folder: Types
 | type  | true |String| Must be filled with "Audio" value |
 | fileId  | true |String |  Uuid with backend file id of audio file|
 | name  | true |String |  Backend name of audio file|
-| mimeType  | true |String| [mimeType](https://www.freeformatter.com/mime-types-list.html) of video file |
+| mimeType  | true |String| M4A |
 | size  | true |Int| File size, bytes |
 
 ## Sample object
@@ -28,8 +28,8 @@ folder: Types
 {  
       "type":"Audio",
       "fileId":"Uuid value",
-      "name":"test.mp3",
-      "mimeType":"MP3",
+      "name":"test.m4a",
+      "mimeType":"M4A",
       "size":1024
    }
 ```
