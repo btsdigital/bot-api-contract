@@ -158,9 +158,6 @@ entries:
     - title: SendContactMessage
       output: web
       url: /SendContactMessage.html
-    - title: SendUiState
-      url: /SendUiState.html
-      output: web
     - title: ForwardMessage
       url: /ForwardMessage.html
       output: web
@@ -181,10 +178,4 @@ entries:
       output: web
     - title: DeleteGroupAvatar
       url: /DeleteGroupAvatar.html
-      output: web
-    - title: SendContainerMessage
-      url: /SendContainerMessage.html
-      output: web
-    - title: EditContainerMessage
-      url: /EditContainerMessage.html
       output: web
