@@ -11,7 +11,7 @@ folder: Requests
 
 <p> All requests should be sent to proper endpoints.
 </p>
-<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/updates/" </b> is used for the following methods:
+<p> Endpoint <b> "https://botapi.aitu.io/bot/v1/updates/" </b> is used for the following methods:
 
 <ul>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/retrieveUpdate.html">retrieveUpdate</a>;</i>
@@ -22,15 +22,9 @@ folder: Requests
 </li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/DeleteMessage.html">DeleteMessage</a>;</i>
 </li>
-<li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendContainerMessage.html">SendContainerMessage</a>;</i>
-</li>
-<li> <i><a href="https://btsdigital.github.io/bot-api-contract/EditContainerMessage.html">EditContainerMessage</a>;</i>
-</li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendContactMessage.html">SendContactMessage</a>;</i>
 </li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/ForwardMessage.html">ForwardMessage</a>;</i>
-</li>
-<li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendUiState.html">SendUiState</a>;</i>
 </li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/KickFromGroup.html">KickFromGroup</a>;</i>
 </li>
@@ -45,34 +39,34 @@ folder: Requests
 </ul>
 </p>
 
-<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/upload/" </b> is used for the <i><a href="">handleUploadFiles</a></i> method.
+<p> Endpoint <b> "https://botapi.aitu.io/bot/v1/upload/" </b> is used for the <i><a href="">handleUploadFiles</a></i> method.
 </p>
 
-<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/download/" </b> is used for the <i><a href="">handleDownloadFile</a></i> method.
+<p> Endpoint <b> "https://botapi.aitu.io/bot/v1/download/" </b> is used for the <i><a href="">handleDownloadFile</a></i> method.
 </p>
 
-<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/getMe/" </b> is used for the <i><a href="">getMe</a></i> method.
+<p> Endpoint <b> "https://botapi.aitu.io/bot/v1/getMe/" </b> is used for the <i><a href="">getMe</a></i> method.
 </p>
 
-<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/avatar/" </b> is used for the <i><a href="">uploadAvatar</a></i> method.
+<p> Endpoint <b> "https://botapi.aitu.io/bot/v1/avatar/" </b> is used for the <i><a href="">uploadAvatar</a></i> method.
 </p>
 
-<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/avatar/{fileId}/" </b> is used for the <i><a href="">downloadAvatar</a></i> method. It's neccesarry to put file Id of avatar instead of  {fileId} value in a endpoint string. 
+<p> Endpoint <b> "https://botapi.aitu.io/bot/v1/avatar/{fileId}/" </b> is used for the <i><a href="">downloadAvatar</a></i> method. It's neccesarry to put file Id of avatar instead of  {fileId} value in a endpoint string. 
 </p>
 
-<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/channels/{channelId}/" </b> is used for the <i><a href="">getChannelInfo</a></i> method. It's neccesarry to put peer Id of a channel instead of  {channelId} value in a endpoint string. 
+<p> Endpoint <b> "https://botapi.aitu.io/bot/v1/channels/{channelId}/" </b> is used for the <i><a href="">getChannelInfo</a></i> method. It's neccesarry to put peer Id of a channel instead of  {channelId} value in a endpoint string. 
 </p>
 
-<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/channels/{channelId}/admins/" </b> is used for the <i><a href="">getChannelAdmins</a></i> method. It's neccesarry to put peer Id of a channel instead of  {channelId} value in a endpoint string. 
+<p> Endpoint <b> "https://botapi.aitu.io/bot/v1/channels/{channelId}/admins/" </b> is used for the <i><a href="">getChannelAdmins</a></i> method. It's neccesarry to put peer Id of a channel instead of  {channelId} value in a endpoint string. 
 </p>
 
-<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/channels/{channelId}/messages/" </b> is used for the <i><a href="">getChannelMessages</a></i> method. It's neccesarry to put peer Id of a channel instead of  {channelId} value in a endpoint string. 
+<p> Endpoint <b> "https://botapi.aitu.io/bot/v1/channels/{channelId}/messages/" </b> is used for the <i><a href="">getChannelMessages</a></i> method. It's neccesarry to put peer Id of a channel instead of  {channelId} value in a endpoint string. 
 </p>
 
-<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/user/{userId}/avatar/" </b> is used for the <i><a href="">getAvatars</a></i> method. It's neccesarry to put peer Id of a user instead of  {userId} value in a endpoint string. 
+<p> Endpoint <b> "https://botapi.aitu.io/bot/v1/user/{userId}/avatar/" </b> is used for the <i><a href="">getAvatars</a></i> method. It's neccesarry to put peer Id of a user instead of  {userId} value in a endpoint string. 
 </p>
 
-<p> Endpoint <b> "https://botapi.btsdapps.net/bot/v1/webhook/" </b> is used for the following methods:
+<p> Endpoint <b> "https://botapi.aitu.io/bot/v1/webhook/" </b> is used for the following methods:
 <ul>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/getwebhookinfo.html">getWebhookInfo;</a></i>
 </li>
