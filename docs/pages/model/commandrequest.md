@@ -21,15 +21,9 @@ folder: Requests
 </li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/DeleteMessage.html">DeleteMessage</a>;</i>
 </li>
-<li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendContainerMessage.html">SendContainerMessage</a>;</i>
-</li>
-<li> <i><a href="https://btsdigital.github.io/bot-api-contract/EditContainerMessage.html">EditContainerMessage</a>;</i>
-</li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendContactMessage.html">SendContactMessage</a>;</i>
 </li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/ForwardMessage.html">ForwardMessage</a>;</i>
-</li>
-<li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendUiState.html">SendUiState</a>;</i>
 </li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/KickFromGroup.html">KickFromGroup</a>;</i>
 </li>
