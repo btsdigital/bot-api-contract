@@ -14,11 +14,11 @@ folder: Types
 
 ## Structure
 
-| Variable  | Obligative  | Type| Validation| Description
-|---|:---:|---|---|---|
-| fileId | true | String | - |Uuid with backend ID of uploaded file |
-| name | true |  String |LocalID length should be <= 255  | Backend name of a file |
-| mediaType  | true |  string | -| Type of media file must be set: "DOCUMENT","IMAGE","VIDEO","AUDIO".|
+| Variable  | Obligative  | Type| Validation| Description                                                                                
+|---|:---:|---|---|--------------------------------------------------------------------------------------------|
+| fileId | true | String | - | Uuid with backend ID of uploaded file                                                      |
+| name | true |  String |LocalID length should be <= 255  | Backend name of a file                                                                     |
+| mediaType  | true |  string | -| Type of media file must be set: "DOCUMENT","IMAGE","VIDEO","AUDIO","MUSIC". |
 
 ## Sample object
 
