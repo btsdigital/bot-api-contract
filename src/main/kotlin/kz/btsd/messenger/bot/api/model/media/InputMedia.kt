@@ -9,6 +9,6 @@ class InputMedia(
     val mediaType: InputMediaType
 ) {
     enum class InputMediaType {
-        DOCUMENT, IMAGE, VIDEO, AUDIO
+        DOCUMENT, IMAGE, VIDEO, AUDIO, MUSIC
     }
 }
