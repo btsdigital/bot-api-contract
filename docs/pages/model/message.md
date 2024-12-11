@@ -12,11 +12,6 @@ folder: Types
 <p> This object represents an update about a new message sent to dialog with a service.
 </p>
 
-New message might be sent by user directly or through the use of [ReplyCommand](https://btsdigital.github.io/bot-api-contract/replycommand.html).
-
-<p> Messages sent to dialog through the use of QUICK_FORM_ACTION type of <a href="https://btsdigital.github.io/bot-api-contract/quickbuttoncommand.html">Quickbuttons</a> wont be returned in this updates.
-</p>
-
 ## Structure
 
 | Variable  | Obligative  |Type| Description

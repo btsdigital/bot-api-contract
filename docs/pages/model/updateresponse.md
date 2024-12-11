@@ -23,15 +23,7 @@ folder: Updates
 </li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/messageforwardmetadata.html">MessageForwardMetadata</a>;</i>
 </li>
-<li> <i><a href="https://btsdigital.github.io/bot-api-contract/quickbuttonselected.html">QuickButtonSelected</a>;</i>
-</li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/inlinecommandselected.html">InlineCommandSelected</a>;</i>
-</li>
-<li> <i><a href="https://btsdigital.github.io/bot-api-contract/formsubmitted.html">FormSubmitted</a>;</i>
-</li>
-<li> <i><a href="https://btsdigital.github.io/bot-api-contract/formmessagesent.html">FormMessageSent</a>;</i>
-</li>
-<li> <i><a href="https://btsdigital.github.io/bot-api-contract/formclosed.html">FormClosed</a>;</i>
 </li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/invitedtogroup.html">InvitedToGroup</a>;</i>
 </li>

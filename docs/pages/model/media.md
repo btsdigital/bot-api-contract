@@ -13,8 +13,6 @@ Object represents media data.
 
 <p>There are 5 types to represent media files in messenger:
 <ul>
-<li><a href="https://btsdigital.github.io/bot-api-contract/contact.html">Contact</a>;
-</li>
 <li><a href="https://btsdigital.github.io/bot-api-contract/image.html">Image</a>;
 </li>
 <li><a href="https://btsdigital.github.io/bot-api-contract/video.html">Video</a>;

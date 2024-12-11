@@ -53,17 +53,8 @@ entries:
     - title: UiState
       url: /uistate.html
       output: web
-    - title: ReplyCommand
-      url: /replycommand.html
-      output: web
-    - title: QuickButtonCommand
-      url: /quickbuttoncommand.html
-      output: web
     - title: InputMedia
       url: /inputmedia.html
-      output: web
-    - title: InputContact
-      url: /inputcontact.html
       output: web
     - title: Message
       url: /message.html
@@ -77,20 +68,8 @@ entries:
     - title: MessageForwardMetadata
       url: /messageforwardmetadata.html
       output: web
-    - title: QuickButtonSelected
-      url: /quickbuttonselected.html
-      output: web
     - title: InlineCommandSelected
       url: /inlinecommandselected.html
-      output: web
-    - title: FormSubmitted
-      url: /formsubmitted.html
-      output: web
-    - title: FormMessageSent
-      url: /formmessagesent.html
-      output: web
-    - title: FormClosed
-      url: /formclosed.html
       output: web
     - title: InvitedToGroup
       url: /invitedtogroup.html
@@ -134,9 +113,6 @@ entries:
     - title: Image
       url: /image.html
       output: web
-    - title: Contact
-      url: /contact.html
-      output: web
     - title: Video
       url: /video.html
       output: web
@@ -155,9 +131,6 @@ entries:
     - title: EditMessage
       url: /EditMessage.html
       output: web
-    - title: SendContactMessage
-      output: web
-      url: /SendContactMessage.html
     - title: ForwardMessage
       url: /ForwardMessage.html
       output: web

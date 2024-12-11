@@ -22,8 +22,6 @@ folder: Requests
 </li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/DeleteMessage.html">DeleteMessage</a>;</i>
 </li>
-<li> <i><a href="https://btsdigital.github.io/bot-api-contract/SendContactMessage.html">SendContactMessage</a>;</i>
-</li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/ForwardMessage.html">ForwardMessage</a>;</i>
 </li>
 <li> <i><a href="https://btsdigital.github.io/bot-api-contract/KickFromGroup.html">KickFromGroup</a>;</i>
